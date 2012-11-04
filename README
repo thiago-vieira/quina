@@ -1,1 +1,3 @@
-Extrai os números sorteados de um determinado concurso da Quina, do site da Caixa.
+Quina Rails App - Verifica se você ganhou na Quina.
+
+probabilidade.rb - estima quantas vezes você pode ganhar na Quina em 40 anos.
