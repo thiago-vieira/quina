@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121206165149) do
+ActiveRecord::Schema.define(:version => 20121220174106) do
 
   create_table "bilhetes", :force => true do |t|
     t.integer  "usuario"
@@ -24,11 +24,19 @@ ActiveRecord::Schema.define(:version => 20121206165149) do
 
   create_table "jogos", :force => true do |t|
     t.integer  "bilhete_id"
-    t.string   "numeros"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
 
   add_index "jogos", ["bilhete_id"], :name => "index_jogos_on_bilhete_id"
+
+  create_table "numeros", :force => true do |t|
+    t.integer  "numero"
+    t.integer  "jogo_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "numeros", ["jogo_id"], :name => "index_numeros_on_jogo_id"
 
 end

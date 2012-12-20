@@ -25,9 +25,8 @@
   <div class="field">
     <%= f.label :jogos %><br/><br/>
     <%= f.fields_for :jogos do |jogo| %>
-      <%= jogo.text_field :numeros %>
-      <% jogo.object.numeros.each do |numero| %>
-        <%#= jogo.text_field "numeros[]", size:1, maxlength:2, value:numero %>
+      <%= jogo.fields_for :numeros do |numero| %>
+        <%= numero.text_field "numero", size:1, maxlength:2 %>
       <% end %>
       <hr/>
     <% end %>
