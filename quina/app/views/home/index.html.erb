@@ -1,5 +1,6 @@
 <%= form_tag 'resultado' do %>
   <h1>Jogou na Quina? Deixe que eu vejo se você ganhou!</h1>
+  <p>Último concurso: <%= @ultimo_concurso %></p>
   <p>Concurso inicial: <%= text_field_tag :concurso_inicio, session[:concurso_inicio] %> Concurso final: <%= text_field_tag :concurso_fim, session[:concurso_fim] %></p>
 
   <p>Jogo:

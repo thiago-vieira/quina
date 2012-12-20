@@ -1,5 +1,8 @@
 Quina::Application.routes.draw do
 
+  resources :bilhetes
+
+
   root to:'home#index'
 
   post 'resultado' => 'home#resultado'

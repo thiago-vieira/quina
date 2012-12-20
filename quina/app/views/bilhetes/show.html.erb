@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Usuario:</b>
+  <%= @bilhete.usuario %>
+</p>
+
+<p>
+  <b>Tipo:</b>
+  <%= @bilhete.tipo %>
+</p>
+
+<p>
+  <b>Concurso inicial:</b>
+  <%= @bilhete.concurso_inicial %>
+</p>
+
+<p>
+  <b>Concurso final:</b>
+  <%= @bilhete.concurso_final %>
+</p>
+
+
+<%= link_to 'Edit', edit_bilhete_path(@bilhete) %> |
+<%= link_to 'Back', bilhetes_path %>

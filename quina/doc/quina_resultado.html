@@ -1,0 +1,1725 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br"><head>
+
+
+	
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+<title>
+	Quina - Resultado
+</title>
+
+
+<!-- ** Chamadas JAVASCRIPT *********************************************************************************************************************** -->
+<!--[if IE 6]>
+<script language="JavaScript" type="text/javascript" src="/_newfuncoes/DD_belatedPNG.js" ></script>
+<script language="JavaScript" type="text/javascript" >
+  /* Exemplo de utilizacao */
+  DD_belatedPNG.fix('.png_transp');
+</script>
+<![endif]-->
+
+
+<script src="quina_resultado_arquivos/ga.js" async="" type="text/javascript"></script><script language="JavaScript" type="text/javascript" src="quina_resultado_arquivos/global.js"></script>
+<!--<script language="JavaScript" type="text/javascript" src="/_newfuncoes/jquery.pack.js"></script>-->
+<script language="JavaScript" type="text/javascript" src="quina_resultado_arquivos/jquery-1.js"></script>
+<script language="JavaScript" type="text/javascript" src="quina_resultado_arquivos/functions.js"></script>
+<script language="JavaScript" type="text/javascript" src="quina_resultado_arquivos/functions_deslizante.js"></script>
+
+
+<!-- Chamadas que estanciam o produto Rybená  -->
+<script type="text/javascript" src="quina_resultado_arquivos/rybena.js"></script>
+<!--script type="text/javascript" src="js/plugins/ui/jquery-ui-personalized-1.5.3.js"></script-->
+
+<!--<script type="text/javascript" src="/_newincludes/ad_dv.js"></script>-->
+
+<!-- Posição mudada do include, pois usa JQUERY -->
+<script type="text/javascript" language="javascript">
+	var js_transacional="www1.caixa.gov.br";
+	var js_institucional="www.caixa.gov.br";
+
+
+/************************************************************************
+*		Complemento para Função aumenta a fonte em trê tamanhos fixo		*
+*		que está no global.js															*
+************************************************************************/
+
+	//Variáveis globais 
+	var TAMFONTE0		= 0; //Tamanho inicial da fonte 0px
+	var TAMFONTE1		= 3; //Tamanho médio da fonte 3px
+	var TAMFONTE2		= 4; //Tamanho maximo da fonte TAMFONTE1+4px
+	var tamanhoFonte	= 0; //Tamanho da fonte atual
+
+	//carrega no on-load da página, a função aumentar e diminuir a fonte onde tiver as class 	aumentarFonte e  diminuirFonte
+	$(
+		function(){
+			$(".tamFonte1").click(function(){ tamFontSize(0) }).blur(); 
+			//blur() aqui remove o foco do elemento, logo após o clique
+			$(".tamFonte2").click(function(){ tamFontSize(1)  }).blur();
+			$(".tamFonte3").click(function(){ tamFontSize(2)  }).blur();
+		}
+	)
+
+/************************************************************************
+*		Fim Complemento para Função aumenta a fonte em trê tamanhos fixo	*
+************************************************************************/
+
+</script>
+
+
+<!-- ** Chamadas CSS ****************************************************************************************************************************** -->
+<link rel="stylesheet" type="text/css" href="quina_resultado_arquivos/caixagovbr.css">
+<!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="/_newcss/2009_ie.css" />
+<![endif]-->
+
+<!-- Novo cabeçalho, menu e rodapé -->
+<script language="javascript" type="text/javascript" src="quina_resultado_arquivos/menu.js"></script>
+<link rel="stylesheet" type="text/css" href="quina_resultado_arquivos/geral.css">
+<link rel="stylesheet" type="text/css" href="quina_resultado_arquivos/home_lores.css">
+
+
+	<link href="quina_resultado_arquivos/loterias_resultado.css" rel="stylesheet" type="text/css">
+	<link href="quina_resultado_arquivos/quina_new.css" rel="stylesheet" type="text/css">
+	<!--[if IE]>
+		<link rel="stylesheet" type="text/css" href="/_newcss/2009_ie.css" />
+	<![endif]-->
+	
+	
+	<script type="text/javascript" src="quina_resultado_arquivos/quina_ajax_new.js"></script>
+	
+	<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-18080104-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+	<meta name="ROBOTS" content="FOLLOW,INDEX">
+
+
+</head>
+
+
+	<body>
+	
+
+
+
+
+	<noscript></noscript>
+	<!-- Div para carregar o RYBENA -->
+<div class="ui-draggable" style="position: absolute;" id="draggable">
+</div>
+<div id="cabecalho_geral">
+	
+
+
+	<meta name="ROBOTS" content="FOLLOW,INDEX">
+
+
+
+
+<div id="cabecalho_2011_container">
+<div id="cabecalho_2011_content">
+<h1><a class="link_home" title="Caixa Econômica Federal" tabindex="1" href="http://www.caixa.gov.br/">Caixa Econômica Federal</a></h1>
+<h2 title="O banco que acredita nas pessoas.">O banco que acredita nas pessoas.</h2>
+<div id="internet_banking">
+<h3 title="Você cliente,">Você cliente,</h3><a class="link_ibank" onkeypress="function onkeypress(event) {
+    maximized();
+}" title="acesse sua conta." onclick="function onclick(event) {
+    maximized();
+}" tabindex="4" href="https://internetbanking.caixa.gov.br/SIIBC/index.processa">acesse sua conta</a> <a class="link_ajuda" title="Precisa de ajuda?" tabindex="5" href="https://internetbanking.caixa.gov.br/siwinstatic/htm/tutorial/tutorial.htm">Precisa de ajuda?</a> </div>
+<ul id="acessibilidade">
+<li><a class="ico_dv_2011" title="Internet Banking Caixa: acesso para deficientes visuais" tabindex="2" href="https://internetbanking.caixa.gov.br/">Internet Banking Caixa: acesso para deficientes visuais</a> 
+</li><li><a class="ico_libras_2011" onkeypress="function onkeypress(event) {
+    getSelText();
+    return false;
+}" title="Tradutor de libras: selecione o texto e clique aqui" onclick="function onclick(event) {
+    getSelText();
+    return false;
+}" tabindex="3">Tradutor de libras: selecione o texto e clique aqui</a></li></ul>
+<ul id="links_caixa">
+<li><a class="link_rede" title="Rede de atendimento" href="http://www1.caixa.gov.br/atendimento/index.asp">Rede de atendimento</a> 
+</li><li><a class="link_sobre" title="Sobre a CAIXA" href="http://www.caixa.gov.br/acaixa">Sobre a CAIXA</a> 
+</li><li><a class="link_cultural" title="Caixa Cultural" href="http://www.caixacultural.com.br/html/index.html">Caixa Cultural</a> 
+</li><li><a class="link_downloads" title="Downloads" href="http://www1.caixa.gov.br/download/index.asp">Downloads</a> 
+</li><li><a class="link_ouvidoria" title="Ouvidoria" href="http://www1.caixa.gov.br/ouvidoria/index.asp">Ouvidoria</a> 
+</li><li><a class="link_imprensa" title="Imprensa" href="http://www1.caixa.gov.br/imprensa/index.asp">Imprensa</a> 
+</li><li class="ultimo_item"><a class="link_fale_conosco" title="Fale conosco" href="http://www1.caixa.gov.br/atendimento/telefones_da_caixa.asp">Fale conosco</a> </li></ul>
+</div>
+</div>
+
+<!-- xxx Área de controle do site xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+
+
+
+
+	<meta name="ROBOTS" content="FOLLOW,INDEX">
+
+
+
+
+
+<script type="text/javascript">
+function envia_busca()
+{
+	if(document.getElementById('text_chave').value.length < 3){
+		alert('A busca deve ser efetuada com 3 caracteres ou mais.');
+	}
+	else
+	{ 
+		document.forms["frm_pesquisa"].action = 'http://www1.caixa.gov.br/busca/resultados.asp?q1=' + document.getElementById('text_chave').value +'&q2=1';		
+		document.forms["frm_pesquisa"].submit();
+	}
+}
+function buscaCheckKey(event) 
+{
+		
+	//if (window.event.keyCode == 13)
+	if ((event.which == 13) || (event.keyCode == 13)) 
+		envia_busca();
+}
+</script>
+
+<div id="menu_2011_container">
+<div id="menu_2011_content">
+<h3 title="Busca">Busca</h3>
+
+
+<form id="frm_pesquisa" name="frm_pesquisa" action="#" method="post">
+	<input name="text_chave" id="text_chave" value="Digite o que procura" onkeypress="buscaCheckKey(event);" type="text">
+	<button type="button" name="btn_ok" id="btn_ok" onclick="envia_busca();">OK</button>
+</form>
+
+
+<h3 title="Menu">Menu</h3>
+<ul>
+<li class="aba_ativa"><a href="#aba_voce" title="Você">Você</a> 
+</li><li><a href="#aba_empresa" title="Empresa">Empresa</a> 
+</li><li><a href="#aba_governo" title="Governo">Governo</a> 
+</li><li><a href="#aba_judiciario" title="Judiciário">Judiciário</a> </li></ul>
+<dl>
+<dt><a name="aba_voce" title="Você">Você</a> 
+</dt><dd style="display: block;" class="conteudo_voce">
+<div style="display: block;">
+<ul>
+<li class="menu_ativo"><a href="#aba_voce_produtos_servicos" title="Produtos e Serviços">Produtos e Serviços</a> 
+</li><li><a href="#aba_voce_servicos_sociais" title="Serviços Sociais">Serviços Sociais</a> 
+</li><li><a href="#aba_voce_destaques" title="Destaques">Destaques</a> 
+</li><li class="bt_ver_todos"><a href="http://www.caixa.gov.br/voce/index.asp" title="Ver todos">Ver todos</a> </li></ul>
+<h4><a name="aba_voce_produtos_servicos" title="Produtos e Serviços">Produtos e Serviços</a></h4>
+<ol style="display: block;">
+<li><a href="http://www.caixa.gov.br/Voce/cartoes/index.asp" title="A CAIXA oferece para você, cartões de crédito exclusivos, que se encaixam 
+perfeitamente ao seu perfil e que atendem todas as suas necessidades. ">Cartões de Crédito</a> 
+</li><li><a href="http://www.caixacapitalizacao.com.br/portal/site/CaixaCapitalizacao">Capitalização</a> 
+</li><li><a href="http://www.certificado.caixa.gov.br/" title="Para tornar ainda mais seguro o acesso aos inúmeros serviços on-line, a CAIXA 
+oferece o Certificado Digital, o que há de mais avançado em segurança na internet.">Certificado Digital</a> 
+</li><li><a href="http://www.caixaconsorcios.com.br/portal/site/CaixaConsorcios/menuitem.0effbf705b8a7366bf251ef5661010a0/?vgnextoid=a4018863fe172110VgnVCM100000790110acRCRD">Consórcio CAIXA </a>
+</li><li><a href="http://www.caixa.gov.br/Voce/Credito/Consignacoes/index.asp" title="Se você quer crédito rápido, com prazo amplo e facilidade para pagar, conheça 
+o que a CAIXA tem a oferecer.">Consignação</a> 
+</li><li><a href="http://www.caixa.gov.br/Voce/contas/index.asp" title="Contas">Contas</a> 
+</li><li><a href="http://www.caixa.gov.br/Voce/contribuicao_sindical/index.asp" title="Você conta com várias opções de local para pagamento da Guia de Recolhimento 
+da Contribuição Sindical Urbana- GRCSU, e não é preciso ter conta na CAIXA para usufruir 
+dessa facilidade. ">Contribuição Sindical Urbana</a> 
+</li><li><a href="http://www.caixa.gov.br/voce/Credito/Credito_Pessoal/cheque_especial/index.asp" title="Cheque Especial CAIXA tem muito mais vantagem para você e crédito sem 
+burocracia.">Cheque especial</a> 
+</li><li><a href="http://www.caixa.gov.br/Voce/credito/index.asp" title="Crédito para todo tipo de perfil e necessidade, sem complicação.">Crédito</a> 
+</li><li><a href="http://www.caixa.gov.br/voce/dda/index.asp" title="Na CAIXA, todos os seus boletos mensais estão reunidos num só lugar.">DDA </a>
+</li><li><a href="http://www.caixa.gov.br/habitacao/index.asp" title="Habitação">Habitação</a> 
+</li><li><a href="http://www11.caixa.gov.br/portal/public/investidor" title="Investindo seu dinheiro na CAIXA, você só tem a ganhar.">Investimentos</a> 
+</li><li><a href="http://www.caixa.gov.br/voce/Credito/mpo_crescer/index.asp" title="Crédito na medida certa das suas necessidades e do seu empreendimento.">Microcrédito</a> 
+</li><li><a href="http://www.caixa.gov.br/Voce/Credito/Penhor/index.asp" title="Penhor">Penhor</a> 
+</li><li><a href="http://www11.caixa.gov.br/portal/public/investidor/investidor/invista/tipos_de_investimento/poupanca" title="Conte com a tradição e credibilidade da Poupança CAIXA na hora de investir seu 
+dinheiro.">Poupança</a> 
+</li><li><a href="http://www.caixavidaeprevidencia.com.br/" title="A Previdência da CAIXA permite que o trabalhador acumule recursos para 
+garantir um presente e um futuro muito mais tranquilo.">Previdência</a> 
+</li><li><a href="http://www.caixaseguros.com.br/portal/site/CaixaSeguros" title="A CAIXA tem o seguro ideal para você e para a sua família.">Seguros</a> 
+</li><li><a href="http://www1.caixa.gov.br/Voce/CAIXACelular/index.asp" title="Com a CAIXA é assim, informações bancárias a qualquer hora, com toda a facilidade, segurança e comodidade, ao alcance das suas mãos. Você também pode acessar a sua conta, fazer transferência, conferir os resultados das Loterias, o Calendário Social, e ter acesso ao Simulador de Habitação.">Serviços no Celular e Tablet</a> 
+</li><li><a href="http://www1.caixa.gov.br/popup/Home/popup_home_42.asp" title="Transferência de Dívida">Transferência de Dívida</a> 
+</li><li><a href="http://www1.caixa.gov.br/popup/Generico/portabilidade.asp" title="Transferência de Salário">Transferência de Salário</a> </li>
+<li style="background-image: none;"><a href="https://bloquetoexpresso.caixa.gov.br/" title="2ª Via Boleto CAIXA">2ª Via Boleto CAIXA</a> </li>
+</ol>
+<h4><a name="aba_voce_servicos_sociais" title="Serviços Sociais">Serviços Sociais</a></h4>
+<ol>
+<li><a href="http://www.caixa.gov.br/fgts/index.asp" title="O patrimônio do trabalhador melhora a vida de todos.">FGTS</a> 
+</li><li><a href="http://www.caixa.gov.br/voce/Fies/" title="O Fundo de Financiamento ao Estudante do Ensino Superior (FIES) é um programa 
+do Ministério da Educação que financia a graduação de estudantes que não possuem condições 
+de arcar com os custos.">FIES</a> 
+</li><li><a href="http://www.caixa.gov.br/Voce/Social/Transferencia/bolsa_familia/index.asp" title="Conheça o programa, os direitos e deveres das famílias atendidas e conte com a 
+CAIXA no recebimento do benefício ou para retirar dúvidas sobre o programa. ">Bolsa Família</a> 
+</li><li><a href="http://www.caixa.gov.br/Voce/Social/Beneficios/pis/index.asp" title="O PIS é um programa criado pelo Governo Federal, que tem a finalidade de 
+promover a integração do empregado na vida e no desenvolvimento das empresas, viabilizando 
+melhor distribuição da renda nacional.">PIS</a> 
+</li><li><a href="http://www.caixa.gov.br/Voce/Social/Beneficios/seguro_desemprego/index.asp" title="O Seguro-Desemprego pode ser solicitado nas DRT (Delegacia Regional do 
+Trabalho), no SINE (Sistema Nacional de Emprego) ou nas agências credenciadas da CAIXA.">Seguro Desemprego</a> 
+</li><li style="background-image: none;"><a href="http://www.caixa.gov.br/voce/Social/Beneficios/INSS/" title="A CAIXA é uma das instituições responsáveis pelo pagamento das aposentadorias, 
+pensões ou auxílios devidos pela Previdência Social.">INSS</a> </li></ol>
+<h4><a name="aba_voce_destaques" title="Destaques">Destaques</a></h4>
+<ol>
+<li><a href="http://www.caixa.gov.br/caixainternacional/" title="A CAIXA oferece serviços especiais para quem é brasileiro,  tem família e 
+amigos fora do Brasil ou é residente em outro país.">CAIXA Internacional</a> 
+</li><li><a href="http://www.caixa.gov.br/compras_caixa/index.asp" title="O Compras CAIXA disponibiliza informações sobre as contratações e permite aos 
+interessados a participação nos pregões, licitações e compras diretas.">Compras CAIXA</a> 
+</li><li><a href="http://www1.caixa.gov.br/imprensa/index.asp" title="Confira nossos releases e outras informações.">Imprensa</a> 
+</li><li><a href="http://www.caixa.gov.br/habitacao/mcmv/index.asp" title="Minha Casa, Minha Vida, é um programa do governo federal que tem transformado 
+o sonho da casa própria em realidade para muitas famílias brasileiras.">Minha Casa Minha Vida</a> 
+</li><li><a href="http://www.caixa.gov.br/voce/relacao_investidores.asp">Relação com Investidores</a>
+</li><li><a href="http://www12.caixa.gov.br/portal/public/rse/" title="O ambiente ideal para ideias inovadoras.">Sustentabilidade</a> 
+</li><li><a href="http://www1.caixa.gov.br/turismo/index.asp" title="O Portal Turismo CAIXA oferece diversas vantagens e oportunidades para quem é 
+cliente ou trabalha pelo crescimento do turismo brasileiro.">Turismo</a> 
+</li><li><a href="http://www1.caixa.gov.br/universitario/index_c.asp" title="O primeiro passo para a sua independência financeira.">Universitário</a> 
+</li><li style="background-image: none;"><a href="http://www11.caixa.gov.br/portal/public/sievj" title="No Vitrine de Joias CAIXA você consulta os lotes de joias disponíveis, os 
+prazos dos leilões, além de conferir todo o procedimento para dar seu lance e arrematar o 
+lote escolhido.">Vitrine de Joias CAIXA</a> </li></ol></div>
+</dd><dt><a name="aba_empresa" title="Empresa">Empresa</a> 
+</dt><dd class="conteudo_empresa">
+<div id="combo_empresa" class="combo"><span>Micro e Pequenas Empresas</span> 
+<ul>
+<li><a href="#aba_empresa_micro_pequenas" title="Micro e Pequenas Empresas">Micro e Pequenas Empresas</a> 
+</li><li><a href="#aba_empresa_media_grandes" title="Média e Grandes Empresas">Média e Grandes Empresas</a> </li></ul></div>
+<div style="display: block;">
+<h4><a name="aba_empresa_micro_pequenas" title="Micro e Pequenas Empresas">Micro e Pequenas Empresas</a></h4>
+<ul>
+<li class="menu_ativo"><a href="#aba_empresa_produtos_servicos" title="Produtos e Serviços">Produtos e Serviços</a> 
+</li><li><a href="#aba_empresa_servicos_sociais" title="Serviços Sociais">Serviços Sociais</a> 
+</li><li><a href="#aba_empresa_destaques" title="Destaques">Destaques</a> 
+</li><li class="bt_ver_todos"><a href="http://www.caixa.gov.br/pj/pj_comercial/mp/index.asp" title="Ver todos">Ver todos</a> </li></ul>
+<h5><a name="aba_empresa_produtos_servicos" title="Produtos e Serviços">Produtos e Serviços</a></h5>
+<ol style="display: block;">
+<li><a href="http://www.caixa.gov.br/pj/pj_comercial/mp/pis/index.asp" title="O cadastro on-line do Número de Inscrição Social (NIS/PIS) é uma ferramenta 
+que permite aos empregadores efetuarem o cadastro de seus empregados de forma prática e 
+rápida">Cadastramento de PIS/NIS</a> 
+</li><li><a href="http://www.caixa.gov.br/pj/pj_comercial/mp/cartoes_credito/index.asp" title="A sua empresa pode contar com a facilidade de um cartão de crédito sem perder 
+o controle das despesas.">Cartões de crédito</a> 
+</li><li><a href="http://www.certificado.caixa.gov.br/" title="Para tornar ainda mais seguro o acesso aos inúmeros serviços on-line, a CAIXA 
+oferece o Certificado Digital, o que há de mais avançado em segurança na internet.">Certificado Digital</a> 
+</li><li><a href="http://www.caixa.gov.br/fgts/conectividade_social_ICP.asp" title="Nova versão do canal eletrônico Conectividade Social, agora com uso da 
+certificação digital ICP-Brasil.">Conectividade Social ICP</a> 
+</li><li><a href="http://www.caixa.gov.br/pj/pj_comercial/mp/conta_corrente/index.asp" title="Com a Conta Corrente Pessoa Jurídica da CAIXA, sua empresa dispõe dos melhores 
+produtos e serviços para todos os tipos de negócios.">Conta Corrente</a> 
+</li><li><a href="http://www.caixa.gov.br/pj/pj_comercial/mp/solucoes_recebimentos/contribuicao_sindical/index.asp" title="A CAIXA facilita a vida da entidade representativa da sua categoria 
+profissional.">Contribuição Sindical Urbana</a> 
+</li><li><a href="http://www.caixa.gov.br/pj/pj_comercial/mp/convenios/index.asp" title="Diversifique as formas de pagamento oferecidas aos clientes da sua empresa 
+firmando um convênio com a CAIXA.">Convênios</a> 
+</li>
+
+
+
+
+
+<li><a href="http://www.caixa.gov.br/pj/pj_comercial/mp/convenios/redecard_visa/index.asp" title="Com o credenciamento REDECARD e/ou CIELO, sua empresa poderá aceitar os 
+cartões de crédito e débito mais conhecidos no Brasil e no mundo.">Credenciamento Redecard/Cielo</a> 
+</li>
+
+<li><a title="Custódia Qualificada CAIXA" href="http://www.caixa.gov.br/pj/pj_comercial/mp/custodia_qualificada/index.asp">Custódia Qualificada CAIXA</a> 
+</li>
+
+
+
+
+<li><a href="http://www.caixa.gov.br/voce/dda/index.asp" title="Na CAIXA você tem a facilidade e o comodismo de ter todos os seus boletos 
+bancários disponíveis eletronicamente. Você pode gerenciar seus pagamentos como e quando 
+achar necessário. ">DDA</a> 
+</li>
+
+
+
+
+
+
+
+<li><a href="http://www.caixa.gov.br/pj/pj_comercial/mp/beneficios_empregados/folha_caixa_web/index.asp" title="Para empresas que contam com até 150 funcionários, conte com essa comodidade 
+oferecida pela CAIXA.">Folha CAIXA Web</a> 
+</li><li><a href="http://www11.caixa.gov.br/portal/public/investidor" title="Com as opções de investimentos da CAIXA, você multiplica os recursos 
+disponíveis da sua micro ou pequena empresa.">Investimentos</a> 
+</li><li><a href="http://www.caixa.gov.br/pj/pj_comercial/mp/linha_credito/index.asp" title="Se crédito é o que a sua empresa precisa, a CAIXA tem!">Linhas de Crédito</a> 
+</li><li><a href="http://www.caixa.gov.br/pj/pj_comercial/mp/promocoes_comerciais/index.asp" title="A CAIXA é responsável pela autorização de distribuição gratuita de prêmios e 
+sorteios filantrópicos.">Promoções Comerciais</a> 
+</li><li><a href="http://www.caixaseguros.com.br/portal/site/CaixaSeguros/menuitem.1d5504f4a27c9e411719cb82661010a0/?vgnextoid=272a0a39270d4110VgnVCM1000000a00660aRCRD" title="Com os seguros para pessoa jurídica da CAIXA SEGUROS você fica tranqüilo para 
+fazer o que importa: fazer sua empresa crescer cada vez mais.">Seguros</a> 
+</li><li><a href="http://www.caixa.gov.br/pj/pj_comercial/mp/solucoes_pagamentos/index.asp" title="A CAIXA oferece várias opções de serviços para facilitar o dia-a-dia da sua 
+empresa na realização de pagamentos.">Soluções em Pagamentos</a> 
+</li>
+
+
+<li><a href="http://www.caixa.gov.br/pj/pj_comercial/mp/solucoes_recebimentos/index.asp" title="A CAIXA oferece diversas soluções em recebimentos que facilitam a vida da sua 
+empresa e a do seu cliente.">Soluções em Recebimentos</a> </li>
+
+
+<li style="background-image: none;"><a href="http://www1.caixa.gov.br/melhorcredito/superconta_caixa_empresarial.html" title="Conheça os benefícios para as empresas que têm conta na CAIXA.">Superconta CAIXA Empresarial</a> </li>
+
+
+
+</ol>
+<h5><a name="aba_empresa_servicos_sociais" title="Serviços Sociais">Serviços Sociais</a></h5>
+<ol>
+<li><a href="http://www.caixa.gov.br/pj/pj_comercial/mp/pis/index.asp" title="O cadastro on-line do Número de Inscrição Social (NIS/PIS) é uma ferramenta 
+que permite aos empregadores efetuarem o cadastro de seus empregados de forma prática e 
+rápida">Cadastramento de PIS/NIS</a> 
+</li><li><a href="http://www.certificado.caixa.gov.br/" title="Para tornar ainda mais seguro o acesso aos inúmeros serviços on-line, a CAIXA 
+oferece o Certificado Digital, o que há de mais avançado em segurança na internet.">Certificado Digital</a> 
+</li><li><a href="http://www.caixa.gov.br/fgts/conectividade_social_ICP.asp" title="Nova versão do canal eletrônico Conectividade Social, agora com uso da 
+certificação digital ICP-Brasil.">Conectividade Social ICP</a> 
+</li><li><a href="http://www.caixa.gov.br/pj/pj_comercial/mp/solucoes_recebimentos/contribuicao_sindical/index.asp" title="A CAIXA facilita a vida da entidade representativa da sua categoria 
+profissional.">Contribuição Sindical Urbana</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/assistencia_tecnica/produtos/transferencia/farmacias_populares/index.asp" title="Farmácia Popular é um programa do Governo Federal que tem como objetivo 
+ampliar o acesso da população aos medicamentos considerados essenciais ao tratamento de 
+doenças com maior ocorrência no país.">Farmácia Popular</a> 
+</li><li><a href="http://www.caixa.gov.br/pj/pj_comercial/mp/parcelamento_debito/index.asp" title="A CAIXA e o INSS firmaram um contrato de prestação de serviços para 
+arrecadação de receitas oriundas do parcelamento de débitos de contribuintes, através de 
+débito em conta, por meio da troca de arquivos com a DATAPREV.">Parcelamento de Débito - Previdência Social </a>
+</li><li style="background-image: none;"><a href="http://www.caixa.gov.br/pj/pj_comercial/mp/promocoes_comerciais/index.asp" title="A CAIXA é responsável pela autorização de distribuição gratuita de prêmios e 
+sorteios filantrópicos.">Promoções Comerciais</a> </li></ol>
+<h5><a name="aba_empresa_destaques" title="Destaques">Destaques</a></h5>
+<ol>
+<li><a href="http://www.caixa.gov.br/pj/pj_comercial/mp/apl/index.asp" title="É um conjunto de empresas localizadas em um mesmo território que apresentam 
+especializações produtivas, compartilham formas de cooperação e possuem um mecanismo de 
+governança. OK">Arranjos Produtivos Locais</a> 
+</li><li><a href="http://www.caixa.gov.br/compras_caixa/index.asp" title="O Compras CAIXA disponibiliza informações sobre as contratações e permite aos 
+interessados a participação nos pregões, licitações e compras diretas.">Compras CAIXA</a> 
+</li><li><a href="http://www1.caixa.gov.br/construcaocivil/index.asp" title="Para empresas do ramo da construção civil, a CAIXA tem produtos e serviços 
+especias com inúmeras vantagens para viabilizar os  seus negócios com muito mais facilidade. ">Construção Civil</a> 
+</li><li><a href="http://www.caixa.gov.br/pj/pj_comercial/mp/linha_credito/financiamentos/empreendedor_individual/index.asp" title="A CAIXA apoia você desde o início de sua vida empresarial.">Empreendedor Individual</a> 
+</li><li><a href="https://www1.caixa.gov.br/lotericos/asp/login/" title="Para quem deseja obter informações e tirar dúvidas de como abrir uma Unidade 
+Lotérica.">Empresários Lotéricos</a> 
+</li><li><a href="http://www.caixa.gov.br/pj/pj_comercial/mp/Franquias/index.asp" title="O CAIXA FRANQUIAS é uma excelente alternativa para ampliar ou abrir seu 
+negócio.">Franquias</a> 
+</li><li><a href="https://www5.caixa.gov.br/fornecedores/pregao_internet/index.asp" title="O Pregão Eletrônico destina-se à aquisição de bens e serviços comuns por meio 
+de licitação realizada em sessão pública na internet.">Pregão Eletrônico</a> 
+</li><li style="background-image: none;"><a href="http://www1.caixa.gov.br/turismo/index.asp" title="O Portal Turismo CAIXA oferece diversas vantagens e oportunidades para quem é 
+cliente ou trabalha pelo crescimento do turismo brasileiro.">Turismo</a> </li></ol></div>
+<div>
+<h4><a name="aba_empresa_media_grandes" title="Média e Grandes Empresas">Médias e Grandes Empresas</a></h4>
+<ul>
+<li class="menu_ativo"><a href="#aba_empresa_produtos_servicos2" title="Produtos e Serviços">Produtos e Serviços</a> 
+</li><li><a href="#aba_empresa_servicos_sociais2" title="Serviços Sociais">Serviços Sociais</a> 
+</li><li><a href="#aba_empresa_destaques2" title="Destaques">Destaques</a> 
+</li><li class="bt_ver_todos"><a href="http://www.caixa.gov.br/pj/pj_comercial/mg/index.asp" title="Ver todos">Ver todos</a> </li></ul>
+<h5><a name="aba_empresa_produtos_servicos2" title="Produtos e Serviços">Produtos e Serviços</a></h5>
+<ol style="display: block;">
+<li><a href="http://www.caixa.gov.br/pj/pj_comercial/mg/beneficios_empregados/index.asp" title="A CAIXA oferece à sua empresa diversos produtos que beneficiam os seus 
+empregados.">Benefícios para seus empregados</a> 
+</li><li><a href="http://www.caixa.gov.br/pj/pj_comercial/mg/beneficios_empregados/caixa_pis_empresa/index.asp" title="Com o CAIXA PIS-Empresa, sua empresa garante comodidade aos empregados no 
+recebimento de seus benefícios.">CAIXA PIS Empresa</a> 
+</li><li><a href="http://www.caixa.gov.br/pj/pj_comercial/mg/cartoes_credito/index.asp" title="Sua empresa pode contar com o cartão que vai impulsionar os seus negócios.">Cartões de Crédito</a> 
+</li><li><a href="http://www.certificado.caixa.gov.br/" title="Para tornar ainda mais seguro o acesso aos inúmeros serviços on-line, a CAIXA 
+oferece o Certificado Digital, o que há de mais avançado em segurança na internet.">Certificado Digital</a> 
+</li><li><a href="http://www.caixa.gov.br/fgts/conectividade_social_ICP.asp" title="Nova versão do canal eletrônico Conectividade Social, agora com uso da 
+certificação digital ICP-Brasil.">Conectividade Social ICP</a> 
+</li><li><a href="http://www.caixa.gov.br/pj/pj_comercial/mg/conta_corrente/index.asp" title="Com a Conta Corrente Pessoa Jurídica da CAIXA, sua empresa dispõe dos melhores 
+produtos e serviços para todos os tipos de negócios.">Conta Corrente</a> 
+</li><li><a href="http://www.caixa.gov.br/pj/pj_comercial/mg/solucoes_recebimentos/contribuicao_sindical/index.asp" title="A CAIXA torna a  vida da entidade representativa da sua categoria profissional 
+muito mais rápida e segura.">Contribuição Sindical Urbana</a> 
+</li><li><a href="http://www.caixa.gov.br/pj/pj_comercial/mg/convenios/index.asp" title="Diversifique as formas de pagamento oferecidas aos clientes da sua empresa 
+firmando um convênio com a CAIXA.">Convênios</a> 
+</li>
+
+<li><a href="http://www.caixa.gov.br/pj/pj_comercial/mg/convenios/redecard_visa/index.asp" title="Com o credenciamento REDECARD e/ou CIELO, sua empresa poderá aceitar os 
+cartões de crédito e débito mais conhecidos no Brasil e no mundo.">Credenciamento Redecard/Cielo</a>
+
+</li><li><a title="Custódia Qualificada CAIXA" href="http://www.caixa.gov.br/pj/pj_comercial/mp/custodia_qualificada/index.asp">Custódia Qualificada CAIXA</a> 
+</li>
+
+<li><a href="http://www.caixa.gov.br/voce/dda/index.asp" title="Na CAIXA, todos os seus boletos mensais estão reunidos num só lugar.">DDA</a> 
+</li><li><a href="http://www.caixa.gov.br/pj/pj_social/mg/fgcn/index.asp" title="Administrado pela CAIXA, o Fundo de Garantia para a Construção Naval - FGCN 
+foi criado com o objetivo de garantir o risco de crédito das operações de financiamento para 
+construção ou produção de embarcações e o risco de performance do estaleiro brasileiro.">FGCN - Construção Naval</a> 
+</li><li><a href="http://www.caixa.gov.br/pj/pj_comercial/mg/beneficios_empregados/folha_caixa_web/index.asp" title="Para empresas que contam com até 150 funcionários, conte com essa comodidade 
+oferecida pela CAIXA.">Folha CAIXA Web</a> 
+</li><li><a href="http://www11.caixa.gov.br/portal/public/investidor" title="Na CAIXA, médias e grandes empresas encontram opções ideais de investimentos  para multiplicar e proteger seu capital.">Investimentos</a> 
+</li><li><a href="http://www.caixa.gov.br/pj/pj_comercial/mg/linha_credito/index.asp" title="Na CAIXA, você encontra a linha de crédito de que sua empresa precisa para 
+crescer.">Linhas de Crédito</a> 
+</li><li><a href="http://www.caixa.gov.br/pj/pj_comercial/mp/promocoes_comerciais/index.asp" title="A CAIXA é responsável pela autorização de distribuição gratuita de prêmios e 
+sorteios filantrópicos.">Promoções Comerciais</a> 
+</li><li><a href="http://www.caixa.gov.br/pj/pj_comercial/mg/solucoes_pagamentos/index.asp" title="A CAIXA oferece várias opções de serviços para facilitar o dia-a-dia da sua 
+empresa na realização de pagamentos.">Soluções em Pagamentos</a> 
+</li><li style="background-image: none;"><a href="http://www.caixa.gov.br/pj/pj_comercial/mg/solucoes_recebimentos/index.asp" title="A CAIXA oferece diversas soluções em recebimentos que facilitam a vida da sua 
+empresa e a do seu cliente.">Soluções em Recebimentos</a> </li></ol>
+<h5>Serviços </h5>
+<ol>
+<li><a href="http://www.caixa.gov.br/pj/pj_comercial/mp/pis/index.asp" title="O cadastro on-line do Número de Inscrição Social (NIS/PIS) é uma ferramenta 
+que permite aos empregadores efetuarem o cadastro de seus empregados de forma prática e 
+rápida">Cadastramento de PIS/NIS</a> 
+</li><li><a href="http://www.certificado.caixa.gov.br/" title="Para tornar ainda mais seguro o acesso aos inúmeros serviços on-line, a CAIXA 
+oferece o Certificado Digital, o que há de mais avançado em segurança na internet.">Certificado Digital</a> 
+</li><li><a href="http://www.caixa.gov.br/fgts/conectividade_social_ICP.asp" title="Nova versão do canal eletrônico Conectividade Social, agora com uso da 
+certificação digital ICP-Brasil.">Conectividade Social ICP</a> 
+</li><li><a href="http://www.caixa.gov.br/pj/pj_comercial/mp/solucoes_recebimentos/contribuicao_sindical/index.asp" title="A CAIXA facilita a vida da entidade representativa da sua categoria 
+profissional.">Contribuição Sindical Urbana</a> 
+</li><li><a href="http://www.caixa.gov.br/voce/dda/index.asp" title="Na CAIXA, todos os seus boletos mensais estão reunidos num só lugar.">DDA CAIXA - Internet Banking</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/assistencia_tecnica/produtos/transferencia/farmacias_populares/index.asp" title="Farmácia Popular é um programa do Governo Federal que tem como objetivo 
+ampliar o acesso da população aos medicamentos considerados essenciais ao tratamento de 
+doenças com maior ocorrência no país.">Farmácia Popular</a> 
+</li><li><a href="http://www.caixa.gov.br/pj/pj_comercial/mp/parcelamento_debito/index.asp" title="A CAIXA e o INSS firmaram um contrato de prestação de serviços para 
+arrecadação de receitas oriundas do parcelamento de débitos de contribuintes, através de 
+débito em conta, por meio da troca de arquivos com a DATAPREV.">Parcelamento de Débito - Previdência Social </a>
+</li><li><a href="http://www.caixa.gov.br/pj/pj_comercial/mp/promocoes_comerciais/index.asp" title="A CAIXA é responsável pela autorização de distribuição gratuita de prêmios e 
+sorteios filantrópicos.">Promoções Comerciais</a> 
+</li><li style="background-image: none;"><a href="http://www1.caixa.gov.br/download/asp/download.asp?subCategId=144&amp;CategId=49&amp;subCateglayout=Pessoa%20F%C3%ADsica%20e%20Pessoa%20Jur%C3%ADdica&amp;Categlayout=Tabela%20de%20Tarifas" title="Consulte nossa Tabela de Tarifas">Tabela de Tarifas</a> </li></ol>
+<h5><a name="aba_empresa_destaques2" title="Destaques">Destaques</a></h5>
+<ol>
+<li><a href="http://www.caixa.gov.br/pj/pj_comercial/mp/apl/index.asp" title="É um conjunto de empresas localizadas em um mesmo território que apresentam 
+especializações produtivas, compartilham formas de cooperação e possuem um mecanismo de 
+governança. OK">Arranjos Produtivos Locais</a> 
+</li><li><a href="http://www.caixa.gov.br/compras_caixa/index.asp" title="O Compras CAIXA disponibiliza informações sobre as contratações e permite aos 
+interessados a participação nos pregões, licitações e compras diretas.">Compras CAIXA</a> 
+</li><li><a href="http://www1.caixa.gov.br/construcaocivil/index.asp" title="Para empresas do ramo da construção civil, a CAIXA tem produtos e serviços 
+especias com inúmeras vantagens para viabilizar os  seus negócios com muito mais facilidade. ">Construção Civil</a> 
+</li><li><a href="http://www.caixa.gov.br/pj/pj_comercial/mp/linha_credito/financiamentos/empreendedor_individual/index.asp" title="A CAIXA apoia você desde o início de sua vida empresarial.">Empreendedor Individual</a> 
+</li><li><a href="http://www.caixa.gov.br/pj/pj_comercial/mp/linha_credito/financiamentos/empreendedor_individual/index.asp" title="Para quem deseja obter informações e tirar dúvidas de como abrir uma Unidade 
+Lotérica.">Empresários Lotéricos</a> 
+</li><li><a href="http://www.caixa.gov.br/pj/pj_comercial/mp/Franquias/index.asp" title="O CAIXA FRANQUIAS é uma excelente alternativa para ampliar ou abrir seu 
+negócio.">Franquias</a> 
+</li><li><a href="https://www5.caixa.gov.br/fornecedores/pregao_internet/index.asp" title="O Pregão Eletrônico destina-se à aquisição de bens e serviços comuns por meio 
+de licitação realizada em sessão pública na internet.">Pregão Eletrônico</a> 
+</li><li style="background-image: none;"><a href="http://www1.caixa.gov.br/turismo/index.asp" title="O Portal Turismo CAIXA oferece diversas vantagens e oportunidades para quem é 
+cliente ou trabalha pelo crescimento do turismo brasileiro.">Turismo</a> </li></ol></div>
+</dd><dt><a name="aba_governo" title="Governo">Governo</a> 
+</dt><dd class="conteudo_governo">
+<div id="combo_governo" class="combo"><span>Municipal</span> 
+<ul>
+<li><a href="#aba_governo_municipal" title="Municipal">Municipal</a> 
+</li><li><a href="#aba_governo_estadual" title="Estadual">Estadual</a> 
+</li><li><a href="#aba_governo_federal" title="Federal">Federal</a> </li></ul></div>
+<div style="display: block;">
+<h4><a name="aba_governo_municipal" title="Municipal">Municipal</a></h4>
+<ul>
+<li class="menu_ativo"><a href="#aba_governo_produtos_servicos" title="Produtos e Serviços">Produtos e Serviços</a> 
+</li><li><a href="#aba_governo_areas_atuacao" title="Áreas de Atuação">Áreas de Atuação</a> 
+</li><li><a href="#aba_governo_programas_sociais" title="Programas Sociais">Programas Sociais</a> 
+</li><li><a href="#aba_governo_desenvolvimento_urbano" title="Desenvolvimento Urbano">Desenvolvimento Urbano</a> <!--<li><a href="#aba_governo_desenvolvimento_urbano" title="Teste">Teste</a> </li>-->
+</li><li class="bt_ver_todos"><a href="http://www1.caixa.gov.br/gov/gov_comercial/municipal/index.asp" title="Ver todos">Ver todos</a> </li></ul>
+<h5><a name="aba_governo_produtos_servicos" title="Produtos e Serviços">Produtos e Serviços</a></h5>
+<ol style="display: block;">
+<li><a href="https://webp.caixa.gov.br/urbanizacao/siurbn/acompanhamento/ac_publico/sistema/asp/ptei_filtro_inicial.asp" title="Sistema de acompanhamentos de obra da CAIXA.">Acompanhamento de Obras</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_comercial/municipal/arrecadacao/index.asp" title="Com a CAIXA, a arrecadação do seu município fica mais moderna, ágil e 
+eficiente.">Arrecadação</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/distribuicao_servicos_cidadao/cadastramento_unico/index.asp" title="O Cadastro Único identifica e mapeia famílias de baixa renda, subsidiando e 
+implantando serviços sociais que as atendam.">Cadastro Único</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_comercial/municipal/arrecadacao/cobranca_divida_ativa/index.asp" title="Aumentar a arrecadação, reduzir custos administrativos e regularizar a 
+situação dos contribuintes inadimplentes.">Cobrança de Dívida Ativa</a> 
+</li><li><a href="http://www.caixa.gov.br/compras_caixa/index.asp" title="O Compras CAIXA disponibiliza informações sobre as contratações e permite aos 
+interessados a participação nos pregões, licitações e compras diretas.">Compras CAIXA</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_comercial/municipal/contas_pagamentos/folha_pagamento/index.asp" title="Agora você faz o pagamento dos salários dos servidores do seu municipio com 
+muito mais facilidade.">Folha de Pagamento</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_comercial/municipal/contas_pagamentos/govconta/index.asp" title="Com a GovConta CAIXA você pode agrupar e organizar as contas da sua 
+administração.">GovConta</a> 
+</li><li><a href="http://www11.caixa.gov.br/portal/public/investidor" title="Na CAIXA, seu município encontra opções para aplicar seus recursos.">Investimentos</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_comercial/municipal/linhas_de_credito/index.asp" title="O crédito que as empresas do setor público precisam está na CAIXA">Linh as de Crédito</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_comercial/municipal/previdencia/index.asp" title="Com a CAIXA o sistema previdenciário do seu município tem mais eficiência e 
+modernidade.">Previdênci a para Municípios</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/programas_de_repasse_do_OGU/index.asp" title="A CAIXA ECONÔMICA FEDERAL na qualidade de mandária da União executa programas 
+e repasses definidos pelo Orçamento Geral da União.">Repasses - OGU</a> 
+</li><li><a href="http://www1.caixa.gov.br/atendimento/canais_atendimento/sala_prefeituras.asp?TipoParametro" title=" É um espaço de relacionamento da CAIXA, como toda a infra-estrutura 
+necessária para atender e atender as necessidade de cada município.  ">Sala das Prefeituras</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/programa_des_urbano/SINAPI/index.asp" title="O Sistema Nacional de Pesquisa de Custos e Índices da Construção Civil - 
+SINAPI - é responsável pela realização de pesquisas mensais que informam os custos e índices 
+da construção civil.">SINAPI</a> 
+</li><li style="background-image: none;"><a href="https://sistn.caixa.gov.br/" title="O Sistema de Coleta de Dados Contábeis dos Entes da Federação - SISTN é o 
+instrumento criado para operacionalizar o convênio firmado entre a Caixa Econômica Federal e 
+da Secretaria do Tesouro Nacional - STN.">SISTN</a> </li></ol>
+<h5><a name="aba_governo_areas_atuacao" title="Programas Sociais">Áreas de Atuação</a></h5>
+<ol>
+<li><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/marcha_prefeitos/habitacao.asp" title="Habitação">Habitação</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/marcha_prefeitos/meio_ambiente.asp" title="Meio Ambiente e Saneamento">Meio Ambiente e Saneamento</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/marcha_prefeitos/gestao_urbana.asp" title="Gestão Urbana">Gestão Urbana</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/marcha_prefeitos/turismo.asp" title="Patrimônio Cultural e Histórico">Patrimônio Cultural e Histórico</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/marcha_prefeitos/area_rural.asp" title="Área Rural">Área Rural</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/marcha_prefeitos/produtos_bancarios.asp" title="Produtos e Serviços Bancários">Produtos e Serviços Bancários</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/marcha_prefeitos/politicas_sociais.asp" title="Políticas Sociais">Políticas Sociais</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/marcha_prefeitos/gestao_publica.asp" title="Gestão Pública">Gestão Pública</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/marcha_prefeitos/repasses_ogu.asp" title="Repasses do OGU">Repasses do OGU</a> 
+</li><li style="background-image: none;"><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/marcha_prefeitos/combate_miseria.asp" title="Combate à Miséria">Combate à Miséria</a> </li></ol>
+<h5><a name="aba_governo_programas_sociais" title="Programas Sociais">Programas Sociais</a></h5>
+<ol>
+<li><a href="http://www1.caixa.gov.br/gov/gov_comercial/municipal/modernizacao_gestao_publica/pmat/index.asp" title="O BNDES informa que estão suspensos os pedidos de financiamentos da linha 
+BNDES PMTA e de recebimentos de projetos na CAIXA, uma vez que os procedimentos relativos à 
+operacionalização do PMTA foram alterados.">Administração Pública - PMAT</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/assistencia_tecnica/index.asp" title="Políticas Sociais, Infra-estrutura e Habitação.">Assistência Técnica</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/distribuicao_servicos_cidadao/bolsa_familia/index.asp" title="O Bolsa Família é um programa do Governo Federal que beneficia a população 
+mais vulnerável de estados e municípios com objetivo de transformar a sociedade e contribuir 
+para a conquista da cidadania.">Bolsa Família</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/distribuicao_servicos_cidadao/index.asp" title="Conheça os serviços distribruídos ao cidadão pela CAIXA">Distribuição de Serviços ao Cidadão</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/educacao_turismo_saude/index.asp" title="Educação, Turismo e Saúde">Educação, Turismo e Saúde</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/assistencia_tecnica/produtos/transferencia/fundo_a_fundo/index.asp" title="Por intermédio da CAIXA, os estados e municípios recebem recursos para 
+pagamentos de programas relacionados à saúde e  de prestação de serviços ao Sistema Único de 
+Saúde (SUS).">Fundo a Fundo</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_comercial/municipal/modernizacao_gestao_publica/pnafm/index.asp" title="Para modernizar e fortalecer as administrações municipais, a CAIXA apresenta o 
+PNAFM.">PNAFM</a> 
+</li><li style="background-image: none;"><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/programas_habitacao/index.asp" title="Confira os programas da habitação disponíveis na CAIXA para o seu município.">Programas de Habitação</a> </li></ol>
+<h5><a name="aba_governo_desenvolvimento_urbano" title="Desenvolvimento Urbano">Desenvolvimento Urbano</a></h5>
+<ol>
+<li><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/assistencia_tecnica/index.asp" title="Assistência Técnica a Municípios e Movimentos Sociais.">Assistência Técnica a Municípios e Movimentos Sociais</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/programa_des_urbano/infra_estrutura_setor_publico/index.asp" title="Intra-estrutura Setor Público">Infra-estrutura Setor Público</a> 
+</li><li><a href="http://www.caixamelhorespraticas.com.br/" title="Prêmio CAIXA Melhores Práticas - Valorizando iniciativas inclusivas, 
+inovadoras e sustentáveis que melhoram a vida dos brasileiros.">Melhores Práticas</a> 
+</li><li style="background-image: none;"><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/programa_des_urbano/saneamento_ambiental/index.asp" title="A CAIXA dispõe de produtos e serviços que geram impactos positivos na melhoria 
+de qualidade de vida da sociedade e no meio ambiente.">Saneamento Ambiental</a> </li></ol><!--<h5><a name="aba_governo_desenvolvimento_urbano" title="Teste">Teste</a></h5>
+      <ol>
+        <li><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/assistencia_tecnica/index.asp" title="Assistência Técnica a Municípios e Movimentos Sociais.">Assis tência Técnica a Municípios e Movimentos Sociais</a> </li>
+        <li><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/programa_des_urbano/infra_estrutura_setor_publico/index.asp" title="Intra-estrutura Setor Público">Infra-estrutura Setor Público</a> </li>
+        <li><a href="http://www.caixamelhorespraticas.com.br/" title="Prêmio CAIXA Melhores Práticas - Valorizando iniciativas inclusivas, 
+inovadoras e sustentáveis que melhoram a vida dos brasileiros.">Melhores Práticas</a> </li>
+        <li><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/programa_des_urbano/saneamento_ambiental/index.asp" title="A CAIXA dispõe de produtos e serviços que geram impactos positivos na melhoria 
+de qualidade de vida da sociedade e no meio ambiente.">Saneamento Ambiental</a> </li>
+      </ol>
+      --></div>
+<div>
+<h4><a name="aba_governo_estadual" title="Estadual">Estadual</a></h4>
+<ul>
+<li class="menu_ativo"><a href="#aba_governo_produtos_servicos2" title="Produtos e Serviços">Produtos e Serviços</a> 
+</li><li><a href="#aba_governo_programas_sociais2" title="Programas Sociais">Programas Sociais</a> 
+</li><li class="bt_ver_todos"><a href="http://www1.caixa.gov.br/gov/gov_comercial/estadual/index.asp" title="Ver todos">Ver todos</a> </li></ul>
+<h5><a name="aba_governo_produtos_servicos2" title="Produtos e Serviços">Produtos e Serviços</a></h5>
+<ol style="display: block;">
+<li><a href="http://www1.caixa.gov.br/gov/gov_comercial/estadual/arrecadacao/concessionarias/index.asp" title="Reduza os custos operacionais e aumente as receitas da sua concessionária de 
+serviços públicos.">Arrecadação de Concessionárias</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_comercial/estadual/arrecadacao/arrecadacao_tributos/index.asp" title="A CAIXA tem a solução certa para a arrecadação de tributos do seu estado.">Arrecadação de Tributos</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/distribuicao_servicos_cidadao/cadastramento_unico/index.asp" title="O Cadastro Único identifica e mapeia famílias de baixa renda, subsidiando e 
+implantando serviços sociais que as atendam.">Cadastro Único</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_comercial/estadual/arrecadacao/cobranca_divida/index.asp" title="Aumentar a arrecadação, reduzir custos administrativos e regularizar a 
+situação dos contribuintes inadimplentes.">Cobrança de Dívida Ativa</a> 
+</li><li><a href="http://www.caixa.gov.br/compras_caixa/index.asp" title="O Compras CAIXA disponibiliza informações sobre as contratações e permite aos 
+interessados a participação nos pregões, licitações e compras diretas.">Compras CAIXA</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_comercial/estadual/contas_pagamentos/index.asp" title="A CAIXA oferece soluções sob medida para a administração estadual.">Contas e Pagamentos</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_comercial/estadual/contas_pagamentos/govconta/index.asp" title="Com a GovConta CAIXA você pode agrupar e organizar as contas da sua 
+administração.">GovConta</a> 
+</li><li><a href="http://www11.caixa.gov.br/portal/public/investidor" title="Na CAIXA, seu estado encontra opções para aplicar seus recursos.">Investimentos </a>
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_comercial/estadual/linhas_de_credito/index.asp" title="O crédito que as empresas do setor público precisam está na CAIXA">Linhas de Crédito </a>
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_comercial/estadual/previdencia/index.asp" title="Com a orientação da CAIXA, o sistema previdenciário do seu Estado vai ficar 
+mais moderno e eficiente.">Previdência para Estados</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/programas_de_repasse_do_OGU/index.asp" title="A CAIXA na qualidade de mandária da União executa programas e repasses 
+definidos pelo Orçamento Geral da União.">Repasses - OGU</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_social/estadual/programas_desenvolvimento_urbano/saneamento_ambiental/index.asp" title="Confira os programas de saneamento ambiental promovidos pela CAIXA.">Saneamento Ambiental</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/programa_des_urbano/SINAPI/index.asp" title="O Sistema Nacional de Pesquisa de Custos e Índices da Construção Civil - 
+SINAPI - é responsável pela realização de pesquisas mensais que informam os custos e índices 
+da construção civil.">SINAPI</a> 
+</li><li style="background-image: none;"><a href="https://sistn.caixa.gov.br/" title="O Sistema de Coleta de Dados Contábeis dos Entes da Federação - SISTN é o 
+instrumento criado para operacionalizar o convênio firmado entre a Caixa Econômica Federal e 
+da Secretaria do Tesouro Nacional - STN.">SISTN</a> </li></ol>
+<h5><a name="aba_governo_programas_sociais2" title="Programas Sociais">Programas Sociais</a></h5>
+<ol>
+<li><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/distribuicao_servicos_cidadao/bolsa_familia/index.asp" title="O Bolsa Família é um programa do Governo Federal que beneficia a população 
+mais vulnerável de estados e municípios com objetivo de transformar a sociedade e contribuir 
+para a conquista da cidadania.">Bolsa Família</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_social/estadual/distribuicao_servicos_cidadao/index.asp" title="Distribuição de Serviços ao Cidadão">Distribuição de Serviços ao Cidadão</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_social/estadual/educacao_turismo_saude/index.asp" title="Educação, Turismo e Saúde">Educação, Turismo e Saúde</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/assistencia_tecnica/produtos/transferencia/fundo_a_fundo/index.asp" title="As transferências Fundo a Fundo consistem em recursos financeiros do 
+Ministério da Saúde, destinados aos Estados e Municípios, com o objetivo de efetuar os 
+pagamentos aos fornecedores e prestadores de bens e serviços na área da saúde.">Fundo a Fundo</a> 
+</li><li style="background-image: none;"><a href="http://www1.caixa.gov.br/gov/gov_social/estadual/programas_habitacao/index.asp" title="Confira os programas da habitação disponíveis na CAIXA.">Programas de Habitação</a> </li></ol>
+<h5><a name="aba_governo_desenvolvimento_urbano2" title="Desenvolvimento Urbano">Desenvolvimento Urbano</a></h5>
+<ol>
+<li><a href="#aba_governo_desenvolvimento_urbano2" title="Desenvolvimento Urbano">Desenvolvimento Urbano</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_social/estadual/programas_desenvolvimento_urbano/index.asp" title="A CAIXA financia a implantação de sistemas de infra-estrutura do transporte 
+coletivo urbano e a mobilidade urbana, melhorando a qualidade de vida e preservando a 
+natureza.">Desenvolvimento Urbano</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_social/estadual/programas_desenvolvimento_urbano/infra-estrutura_setor_publico/index.asp" title="Na CAIXA, você fortalece institucionalmente os estados brasileiros, melhorando 
+a sua condição de habitabilidade e inclusão social.">Infraestrutura Setor Público</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_social/estadual/programas_desenvolvimento_urbano/saneamento_ambiental/index.asp" title="Confira os programas de saneamento ambiental promovidos pela CAIXA.">Saneamento Ambiental</a> 
+</li><li style="background-image: none;"><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/programa_des_urbano/SINAPI/index.asp" title="O Sistema Nacional de Pesquisa de Custos e Índices da Construção Civil - 
+SINAPI - é responsável pela realização de pesquisas mensais que informam os custos e índices 
+da construção civil.">SINAPI</a> </li></ol></div>
+<div>
+<h4><a name="aba_governo_federal" title="Federal">Federal</a></h4>
+<ul>
+<li class="menu_ativo"><a href="#aba_governo_produtos_servicos3" title="Produtos e Serviços">Produtos e Serviços</a> 
+</li><li><a href="#aba_governo_programas_sociais3" title="Programas Sociais">Programas Sociais</a> 
+</li><li class="bt_ver_todos"><a href="http://www1.caixa.gov.br/gov/gov_comercial/federal/index.asp" title="Ver todos">Ver todos</a> </li></ul>
+<h5><a name="aba_governo_produtos_servicos3" title="Produtos e Serviços">Produtos e Serviços</a></h5>
+<ol style="display: block;">
+<li><a href="https://webp.caixa.gov.br/urbanizacao/siurbn/acompanhamento/ac_publico/sistema/asp/ptei_filtro_inicial.asp" title="Sistema de acompanhamentos de obras da CAIXA.">Acompanhamento de Obras</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_comercial/federal/arrecadacao/index.asp" title="Com a CAIXA, a arrecadação dos tributos federais fica mais moderna, ágil e 
+eficiente.">Arrecadação</a> 
+</li><li><a href="http://www.caixa.gov.br/compras_caixa/index.asp" title="O Compras CAIXA disponibiliza informações sobre as contratações e permite aos 
+interessados a participação nos pregões, licitações e compras diretas.">Compras CAIXA</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_comercial/federal/contas_pagamentos/index.asp" title="A CAIXA oferece soluções sob medida para a administração pública.">Contas e Pagamentos</a> 
+</li><li><a href="http://www.caixa.gov.br/voce/dda/index.asp" title="Na CAIXA, todos os seus boletos mensais estão reunidos num só lugar.">DDA</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/assistencia_tecnica/produtos/repasses/construcao_de_estabelecimentos_penais/index.asp" title="O objetivo do Programa de Construção de Estabelecimentos Penais é reduzir o 
+déficit no Sistema Penitenciário Nacional apoiando os estados e o Distrito Federal.">Estabelecimentos Penais</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_comercial/federal/contas_pagamentos/folha_caixa_web/index.asp" title="Para empresas que contam com até 150 funcionários, conte com essa comodidade 
+oferecida pela CAIXA.">Folha CAIXA Web</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_comercial/federal/contas_pagamentos/govconta/index.asp" title="Com a GovConta CAIXA você pode agrupar e organizar as contas da sua 
+administração.">GovConta</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_comercial/federal/linhas_de_credito/index.asp" title="O crédito que as empresas do setor público precisam está na CAIXA">Linhas de Crédito</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/assistencia_tecnica/produtos/repasses/pro_municipios/index.asp" title="O objetivo do Pró-Municípios é contribuir para a melhoria da qualidade de vida 
+nas cidades.">Pró-Municípios</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/programas_de_repasse_do_OGU/index.asp" title="A CAIXA na qualidade de mandária da União executa programas e repasses 
+definidos pelo Orçamento Geral da União.">Repasses - OGU</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/programa_des_urbano/SINAPI/index.asp" title="O Sistema Nacional de Pesquisa de Custos e Índices da Construção Civil - 
+SINAPI - é responsável pela realização de pesquisas mensais que informam os custos e índices 
+da construção civil.">SINAPI</a> 
+</li><li style="background-image: none;"><a href="https://sistn.caixa.gov.br/" title="O Sistema de Coleta de Dados Contábeis dos Entes da Federação - SISTN é o 
+instrumento criado para operacionalizar o convênio firmado entre a Caixa Econômica Federal e 
+da Secretaria do Tesouro Nacional - STN.">SISTN</a> </li></ol>
+<h5><a name="aba_governo_programas_sociais3" title="Programas Sociais">Programas Sociais</a></h5>
+<ol>
+<li><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/distribuicao_servicos_cidadao/bolsa_familia/index.asp" title="Transferência de renda, inclusão e diminuição da desigualdade social">Bolsa Família</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/programa_des_urbano/saneamento_ambiental/brasil_joga_limpo/index.asp" title="O Brasil Joga Limpo é um programa do Governo Federal que tem por objetivo 
+viabilizar projetos da Política Nacional de Meio Ambiente, conforme critérios e deliberações 
+do Fundo Nacional do Meio Ambiente (FNMA).">Brasil Joga Limpo</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/assistencia_tecnica/produtos/transferencia/farmacias_populares/index.asp" title="Farmácia Popular é um programa do Governo Federal que tem como objetivo 
+ampliar o acesso da população aos medicamentos considerados essenciais ao tratamento de 
+doenças com maior ocorrência no país.">Farmácia Popular</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/programas_de_repasse_do_OGU/habitacao_interesse_social.asp" title="O Programa Habitação de Interesse Social, por meio da Ação Apoio do Poder 
+Público para Construção Habitacional para Famílias de Baixa Renda, objetiva viabilizar o 
+acesso à moradia adequada aos segmentos populacionais de renda familiar mensal de até 3 
+salários mínimos em localidades urbanas e rurais.">Habitação de Interesse Social</a> 
+</li><li><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/distribuicao_servicos_cidadao/peti/index.asp" title="Trabalho não combina com criança. Por isso, para afastá-las do trabalho e 
+aproximá-las da escola, existe o Programa de Erradicação do Trabalho Infantil (PETI), que 
+combate o trabalho infantil ao complementar a renda, apoiar e orientar as famílias de baixa 
+renda.">PETI</a> 
+</li><li style="background-image: none;"><a href="http://www1.caixa.gov.br/gov/gov_social/municipal/programas_de_repasse_do_OGU/lista_completa.asp" title="A CAIXA na qualidade de mandária da União executa programas e repasses 
+definidos pelo Orçamento Geral da União.">Programas de Repasse do OGU</a> </li></ol></div>
+</dd><dt><a name="aba_judiciario" title="Judiciário">Judiciário</a> 
+</dt><dd class="conteudo_judiciario">
+<div style="display: block;">
+<ul>
+<li class="menu_ativo"><a href="#aba_judiciario_produtos_servicos" title="Produtos e Serviços">Produtos e Serviços</a> <!--li><a title="Serviços 
+Sociais" href="#aba_judiciario_servicos_sociais">Serviços Sociais</a> 
+</li-->
+</li><li><a href="#aba_judiciario_destaques" title="Destaques">Depósito Judicial</a> 
+</li><li class="bt_ver_todos"><a href="http://www1.caixa.gov.br/judiciario/index.asp" title="Ver todos">Ver todos</a> </li></ul>
+<h4><a name="aba_judiciario_produtos_servicos" title="Produtos e Serviços">Produtos e Serviços</a></h4>
+<ol style="display: block;">
+<li><a href="http://www.caixacapitalizacao.com.br/" title="Que tal economizar dinheiro e ainda concorrer a muitos prêmios? É assim que 
+funcionam os títulos de capitalização. Você faz uma economia programada, guardando dinheiro 
+de uma única vez ou mensalmente, e ainda concorre a uma bolada em dinheiro.">Capitalização</a> 
+</li><li><a href="http://www.caixa.gov.br/Voce/cartoes/index.asp" title="A CAIXA possui um cartão de crédito perfeito para você.">Cartão de Crédito</a> 
+</li><li><a href="http://www1.caixa.gov.br/judiciario/empresas/cont_cent_rec_lev_alv_judiciais.asp" title="A CAIXA oferece para a sua empresa, de forma centralizada na agência de seu 
+relacionamento, um serviço de liquidação de alvarás expedidos em seu favor.">Centralização de Alvarás</a> 
+</li><li><a href="http://www.certificado.caixa.gov.br/" title="Para tornar ainda mais seguro o acesso aos inúmeros serviços on-line, a CAIXA 
+oferece o Certificado Digital, o que há de mais avançado em segurança na internet.">Certificado Digital</a> 
+</li><li><a href="http://www1.caixa.gov.br/judiciario/magistrados/conta_salario.asp" title="Um produto diferenciado para você, que é servidor e recebe seu salário em 
+conta corrente na CAIXA.">Conta Salário</a> 
+</li><li><a href="http://www.caixaconsorcios.com.br/" title="Consórcios Imobiliário, Auto e Moto é com a CAIXA.">Consórcio</a> 
+</li><li><a href="http://www.caixa.gov.br/habitacao/index.asp" title="Com a CAIXA você realiza o sonho da casa própria.">Financiamento Imobiliário</a> 
+</li><li><a href="http://www11.caixa.gov.br/portal/public/investidor" title="Investindo seu dinheiro na CAIXA, você só tem a ganhar.">Investimentos</a> 
+</li><li><a href="http://www.caixa.gov.br/Voce/credito/index.asp" title="Crédito para todo tipo de perfil e necessidade, sem complicação.">Linhas de Crédito</a> 
+</li><li><a href="http://www.caixavidaeprevidencia.com.br/" title="A CAIXA tem várias opções de seguros de vida. Garanta também a realização dos 
+seus sonhos no futuro e a segurança da sua família no presente.">Previdência</a> 
+</li><li style="background-image: none;"><a href="http://www.caixaseguros.com.br/" title="A CAIXA tem o seguro ideal para você e para a sua família.">Seguros</a> </li></ol>
+<h4><a name="aba_judiciario_destaques" title="Destaques">Depósito Judicial</a></h4>
+<ol>
+<li><a href="http://www1.caixa.gov.br/judiciario/magistrados/index.asp" title="Para você, que é magistrado, a CAIXA oferece diversos serviços que facilitam o 
+acesso aos saldos, extratos e demais informações dos Depósitos Judiciais, de forma rápida e 
+segura.">Para os Magistrados</a> 
+</li><li><a href="http://www1.caixa.gov.br/judiciario/servidores/index.asp" title="Para você, que é servidor do Poder Judiciário, previamente autorizado pelo 
+tribunal, a CAIXA oferece acesso aos saldos, extratos e demais informações dos Depósitos 
+Judiciais, de forma rápida e segura.">Para os Servidores</a> 
+</li><li><a href="http://www1.caixa.gov.br/judiciario/advogados/index.asp" title="A CAIXA oferece para você uma ampla rede de agências e postos especializados 
+no atendimento ao Judiciário, distribuídos em todo o país, que permitem a realização e 
+levantamento de Depósitos Judiciais.">Para os Advogados</a> 
+</li><li><a href="http://www1.caixa.gov.br/judiciario/empresas/index.asp" title="A CAIXA oferece para sua empresa acesso aos saldos, extratos e as demais 
+informações dos Depósitos Judiciais, de forma rápida e segura, e convênio para centralização 
+de alvarás.">Para as Empresas</a> 
+</li><li style="background-image: none;"><a href="http://www1.caixa.gov.br/judiciario/voce/index.asp" title="A CAIXA oferece para você uma ampla rede de agências e postos especializados 
+no atendimento ao Judiciário, distribuídos em todo o país, que permitem a realização e 
+levantamento de Depósitos Judiciais.">Para Pessoa Física</a> </li></ol></div></dd></dl>
+</div>
+</div>
+
+<!-- xxx Área de controle do site xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+
+
+</div>
+
+<!-- ==========================================
+	DIV ONDE ENTRA O INCLUDE DE ACESSIBILIDADE
+	Css que regula: a_caixa.css
+========================================== -->
+
+<div id="areaAcessibilidade" class="acessibilidade_sem_degrade"> 
+	<span class="barraTopo_semDegrade"><!-- Ñ tirar esse SPAN --></span>
+	<div id="areasBotoes" class="botoes_semDegrade"><a class="pgAnterior" href="#" onclick="javascript:history.back()" onkeypress="javascript:history.back()" title="Voltar à página anterior">Voltar à página anterior</a> 
+<a class="pgBoasVindas" href="http://www1.caixa.gov.br/index.asp" title="Voltar à página inicial da CAIXA">Voltar à página inicial da CAIXA</a> 
+<!-- 
+						antigo aumenta font 
+<a class="tamanhoNormal" href="#" onclick="javascript:tamanhoTexto('0');" onkeypress="javascript:tamanhoTexto('0');" title="Tamanho de fonte normal">Tamanho de fonte normal</a> 
+<a class="tamanhoUmaVez" href="#" onclick="javascript:tamanhoTexto('0.8');" onkeypress="javascript:tamanhoTexto('0.8');" title="Tamanho de fonte aumentado uma vez">Tamanho de fonte aumentado uma vez</a> 
+<a class="tamanhoDuasVezes" href="#" onclick="javascript:tamanhoTexto('1.02');" onkeypress="javascript:tamanhoTexto('1.02');" title="Tamanho de fonte aumentado duas vezes">Tamanho de fonte aumentado duas vezes</a>
+
+-->
+<a class="tamanhoNormal tamFonte1" href="#" title="Tamanho de fonte normal">Tamanho de fonte normal</a> 
+<a class="tamanhoUmaVez tamFonte2" href="#" title="Tamanho de fonte aumentado uma vez">Tamanho de fonte aumentado uma vez</a> 
+<a class="tamanhoDuasVezes tamFonte3" href="#" title="Tamanho de fonte aumentado duas vezes">Tamanho de fonte aumentado duas vezes</a>
+
+	</div>
+	
+	<span class="titleMenor tit_loteriasMenor">Loterias CAIXA</span>
+	
+	
+		<a href="#acessibilidade" accesskey="C" tabindex="0" title="Acessibilidade: Tecle Alt + C para ir ao Ínicio da Página, 
+					Tecle Alt + P para Pesquisar no BUSCA, 
+					Tecle Alt + R para ir a O que você procura?"></a>
+		
+	<h2 id="titlePortal">Quina - Resultado</h2>
+</div>
+
+
+<!-- DIV's ONDE ENTRA O CORPO -->
+<div id="montaCorpo_2009">
+
+	<div id="title_navbar" class="h_quina">
+		&nbsp;<img src="quina_resultado_arquivos/seta_hierarquia_verde.gif" alt="Hierarquia">&nbsp; <a href="http://www1.caixa.gov.br/index.asp" class="link_azul" title="Boas-vindas">Boas-vindas</a> <img src="quina_resultado_arquivos/seta_hierarquia_verde.gif" alt="Hierarquia">&nbsp; <a href="http://www1.caixa.gov.br/loterias/index.asp" class="link_azul" title="Loterias">Loterias</a> <img src="quina_resultado_arquivos/seta_hierarquia_verde.gif" alt="Hierarquia">&nbsp; <a href="http://www1.caixa.gov.br/loterias/loterias/index.asp" class="link_azul" title="Loterias">Loterias</a> <img src="quina_resultado_arquivos/seta_hierarquia_verde.gif" alt="Hierarquia">&nbsp; <a href="#" class="link_azul" title="Quina">Quina</a> <img src="quina_resultado_arquivos/seta_hierarquia_verde.gif" alt="Hierarquia">&nbsp; Quina - Resultado
+	</div>
+	
+	<!-- Menu opcional -->
+	<div id="menuOpcional" class="mostraResultados expand_text">
+		<ul>
+			<li>Resultados</li>
+			<li><a href="http://www1.caixa.gov.br/loterias/loterias/quina/como_jogar.asp" title="Como jogar">Como jogar </a></li>
+			<li><a href="http://www1.caixa.gov.br/loterias/loterias/quina/distribuicao.asp" title="Distribuição de Arrecadação">Distribuição de Arrecadação</a></li>
+			<li><a href="http://www1.caixa.gov.br/loterias/loterias/quina/probabilidades.asp" title="Probabilidades">Probabilidades</a></li>
+			<li><a href="http://www1.caixa.gov.br/loterias/loterias/quina/download.asp" title="Download de todos os resultados">Download de todos os resultados </a></li>
+			<li><a href="#" onclick="javascript:window.open('http://www1.caixa.gov.br/popup/home/popup_home_17.asp','hotsite','width=950,height=600');" title="Acesse via celular">Acesse via celular</a></li>
+		</ul>
+	</div>
+	<!-- /Menu opcional -->
+		
+
+		<form name="frmPortal1" method="get" action="">
+	
+		<input name="submeteu" id="submeteu" value="nao" type="hidden">
+		<input name="opcao" id="opcao" value=" " type="hidden">
+		<input name="txtConcurso" id="txtConcurso" value=" " type="hidden">
+		<input id="imagem_posterior" name="imagem_posterior" value="" type="hidden">
+		<input id="imagem_anterior" name="imagem_anterior" value="&lt;a class=&quot;btn_conc_ant_quina&quot; href=&quot;javascript:carrega_concurso(3061);&quot; tabindex=&quot;27&quot; title=&quot;Ver concurso anterior&quot;&gt;Ver concurso anterior&lt;/a&gt;" type="hidden">
+		<input id="auditorio" name="auditorio" value="A" type="hidden">
+		<input id="format1" name="format1" value=" " type="hidden">
+		<input id="data_conc" name="data_conc" value="05/12/2012" type="hidden">
+		
+		<!-- COLUNA do MEIO -->
+		<div id="col_meio">
+			<div id="informacoes_gerais" class="expand_text">
+				
+			</div>
+			
+			<div id="resultados">
+				<div id="coluna_esquerda">
+					<div style="display: none;" id="carregando1">
+						<img src="quina_resultado_arquivos/ampulheta_2_002.gif" alt="Carregando..."><p>Carregando...</p>
+					</div>
+				
+					<div id="cabec_resultado">
+						<h3 class="tit_resulQuina">Quina</h3>
+						<h4>Concurso n. <span id="span_conc">3062</span></h4>
+					</div>
+					
+					<div style="display: block;" id="menu_concurso"><div id="menu_concurso_bt_ant"><a class="btn_conc_ant_quina" href="javascript:carrega_concurso(3061);" tabindex="27" title="Ver concurso anterior">Ver concurso anterior</a></div><div id="menu_concurso_bt_data"><a href="#" onclick="return false;" class="tooltip"><b>05/12/2012</b> (Auditório...)<br><b>Realizado em SÃO P.../SP</b><span style="font-size:13px;"><b>05/12/2012</b> (Auditório da CAIXA)<br><b>Realizado em SÃO PAULO/SP</b></span></a></div> <div id="menu_concurso_bt_prx"><span class="btn_off_prx_conc"></span></div></div>
+					<!-- OBSERVACAO -->
+					<div style="display: block;" id="observacao"></div>
+					<!-- MENSAGEM -->
+					<div style="display: none;" id="msg_concurso">
+					</div>
+					<!-- TABELA DETALHES -->
+					<div style="display: block;" id="detalhes_resultado"><br><strong class="img_acumulou" style="font-size:20px;">Acumulou</strong><br><br><strong><span style="font-size: 14px;">Estimativa de Prêmio </span></strong><br><strong><span style="color:#666; font-size: 24px; "> R$ </span><span style="color:#4C2D7E; font-size: 22px;">1.000.000,00</span></strong><br><span style="font-size: 13px;">*para o próximo concurso, a ser realizado em 06/12/2012</span><br><br><div id="valoracumulado" style="border-top:1px solid #CCC; margin-bottom:1px; padding-bottom: 5px;font-size:13px"><br>Valor Acumulado para a Quina:<br><span style="color:#666; font-size: 16px; font-weight: bold"> R$ </span><span style="color:#4C2D7E; font-size: 18px; font-weight: bold;">500.984,92</span></div></div>
+					<!--Valor acumulado especial-->
+					<div style="display: block;" id="vr_acumulado_especial"><div id="valoracumulado" style="text-align: center; border-top:1px solid #CCC; margin-bottom:1px; padding-bottom: 5px;font-size:13px"><br>Valor Acumulado para o Sorteio Especial de São João:<br><span style="color:#666; font-size: 16px; font-weight: bold"> R$ </span><span style="color:#4C2D7E; font-size: 18px; font-weight: bold;">33.921.942,67</span></div></div>
+					<br>
+					<!-- TABELA SORTEIO -->
+					
+					
+					<table id="tabela_jogo" summary="Tabela de jogos" cellpadding="4" cellspacing="0">
+						<tbody>
+						<tr>
+							<td style="display: block;" class="linhas" id="primeiro_sorteio"><span style="display:none;" id="sorteio1"><ul><li>44</li><li>28</li><li>70</li><li>57</li><li>30</li></ul></span><span style="display: block;" id="sorteio2"><ul><li>28</li><li>30</li><li>44</li><li>57</li><li>70</li></ul></span></td>
+						</tr>
+						</tbody>
+					</table>
+					<br>
+					<div id="dtitcrescenteDiv" class="link_azul" style="font-size: 13px; display: block;">
+					 <table border="0" cellpadding="0" cellspacing="0" width="200" align="center">
+					  <tbody><tr>
+					   <td class="txtbranco" align="center">
+						 <a class="ordem" tabindex="26" href="#" onclick="mostra_sorteio(); return false;" onkeypress="mostra_sorteio(); return false;">Ver números na ordem do sorteio</a>
+					</td>
+					  </tr>
+					 </tbody></table>
+					</div>
+	
+	
+					<div id="dtitsorteioDiv" class="link_azul" style="display: none; font-size: 13px;">
+					 <table border="0" cellpadding="0" cellspacing="0" width="200" align="center">
+					  <tbody><tr>
+					   <td class="txtbranco" align="center">
+						<a class="ordem" tabindex="26" href="#" onclick="mostra_crescente(); return false;" onkeypress="mostra_crescente(); return false;">Ver números em ordem crescente</a>
+					   </td>
+					  </tr>
+					 </tbody></table>
+					</div>
+					
+					
+					<!-- TABELA GANHADORES -->
+					<span style="display: block;" id="tab_ganhadores"><div id="titulo_premiacao"></div><table id="tabela_premiacao" summary="Premiações" cellpadding="2" cellspacing="0"><tbody><tr><td colspan="3" height="10"></td></tr><tr><th class="meio">Faixa de premiação</th><th class="meio">Nº de ganhadores</th><th class="direita">Valor do Prêmio (R$)</th></tr><tr><td class="meio">Quina</td><td class="meio">0</td><td class="direita">0,00</td></tr><tr><td class="meio">Quadra</td><td class="meio">61</td><td class="direita">5.866,33</td></tr><tr><td class="meio">Terno</td><td class="meio">4.729</td><td class="direita">108,10</td></tr><tr><td colspan="3" height="10"></td></tr></tbody></table></span>
+	
+					<!-- TABELA Ganhadores por estado -->
+					<div style="display: none;" id="ganhadores_estado"></div>
+					<!--Valor Arrecadado-->
+					<div style="display: block;" id="vr_arrecadado"><span style="font-size:16px; font-weight: bold;">Arrecadação Total:</span> <span style="color: rgb(102, 102, 102); font-size: 20px; font-weight:bold;"> R$</span> <span style="font-size: 18px; color:#4C2D7E; font-weight: bold;">4.645.335,00</span></div>					
+					<!-- OUTRAS OBSERVACOES -->
+					<div style="display: block;" id="observacoes">
+						<ul>
+							<li>Você pode receber prêmios de até R$ 800,00 em qualquer casa 
+lotérica credenciada ou nas agências da CAIXA. Acima desse valor, 
+somente nas agências da CAIXA.</li>
+							<li>A programação das loterias está sujeita a alterações.</li>
+							<li>Confira o bilhete impresso pelo terminal. Ele é o unico comprovante da sua aposta.</li>
+						</ul>
+					</div>
+	
+				</div>
+				<div id="coluna_direita">
+	
+					<!-- [ INÍCIO ] PESQUISAR CONCURSOS -->
+	
+					<!-- <div id="pesquisar_concursos"> -->
+							<script type="text/javascript">
+								var nome_tabela = "quina";
+								var campo_data = "data";
+								var campo_concurso = "concurso";
+							</script>
+							
+<script language="javascript" type="text/javascript" src="quina_resultado_arquivos/jsobjects.js"></script><link rel="stylesheet" type="text/css" href="quina_resultado_arquivos/jsstyle.css"><script language="JavaScript" src="quina_resultado_arquivos/jstranslation.js"></script><script language="JavaScript" src="quina_resultado_arquivos/jscompatibilitylib.js"></script><script language="JavaScript" src="quina_resultado_arquivos/jsgeneral.js"></script><script language="JavaScript" src="quina_resultado_arquivos/jscalendar.js"></script><script language="JavaScript" src="quina_resultado_arquivos/jsimage.js"></script><script language="JavaScript" src="quina_resultado_arquivos/jsimagebutton.js"></script><script language="JavaScript" src="quina_resultado_arquivos/jslabel.js"></script><script language="JavaScript" src="quina_resultado_arquivos/jsmenu.js"></script>
+<script language="javascript" type="text/javascript">
+function verificaPesquisa(objPesq)
+{
+ 
+	//verifica se é string
+	if (isNaN(objPesq.value))
+	{
+			alert('Campo de pesquisa só aceita número! \n Tente outra vez.');
+			objPesq.focus();
+			objPesq.select();
+	}
+	else
+			carrega_concurso(objPesq.value); //carrega concurso
+}
+</script>
+
+<div id="pesquisar_concursos">
+	<span class="tit_pesquisarConcursos">Pesquisar concursos anteriores</span>
+	
+	<label for="cal_concurso" class="h3_class">Por número do concurso:</label>
+	<input id="cal_concurso" name="cal_concurso" maxlength="5" class="campo_numconsurso" title="Insira um número de concurso" value=" " type="text"> <!-- onkeydown="return BloqueiaLetras(this.value);"  -->
+	<a class="btn_buscarConcurso" href="#" onclick="verificaPesquisa(document.getElementById('cal_concurso'));" onkeypress="verificaPesquisa(document.getElementById('cal_concurso'));" title="Pesquise outros concursos">Buscar</a>
+
+	<!--p class="h3_class">Por data:</p>
+	<div id="calendario">
+		<div id="cont_calendario">
+			<script language="javascript" type="text/javascript">
+				lang = "pt";
+				var cal = new JsCalendar("cal");
+				cal.setHeight(100);
+				document.getElementById("cont_calendario").appendChild(cal.output);
+			</script>
+		</div>
+	</div-->
+</div>
+							<!-- </div> -->
+					<!-- [ FINAL ] PESQUISAR CONCURSOS -->
+					
+					<!-- [ INÍCIO ] FERRAMENTAS -->
+					<div id="ferramentas">
+						<span id="btn_imprimir"><a class="btn_impressaoLoterias" href="javascript:imprimir_quina();%20void(null);" title="Imprimir"></a></span>
+					
+						<a class="btn_downloadLoterias" href="http://www1.caixa.gov.br/loterias/loterias/quina/download.asp" title="Download">Download</a>
+						<!--MODIFICACAO PROBABILIDADES => 21/06/2006-->
+						<a class="btn_probabilidadesLoterias" href="http://www1.caixa.gov.br/loterias/loterias/quina/probabilidades.asp" title="Probabilidades">Probabilidades</a>
+					</div>
+					<!-- [ FINAL ] FERRAMENTAS -->
+				</div>
+			</div>
+			<div id="rodape_resultados"><!-- Rodapé resultados --></div>
+		</div>
+		
+			</form>
+		
+		
+		<!-- [ INÍCIO ] COLUNA DIREITA -->
+		<div id="col_direita">
+			<!-- [ INÍCIO ] RECEBA O RESULTADO DAS LOTERIAS NO SEU E-MAIL -->			
+			
+					
+
+
+<script language="JavaScript"><!--
+
+/*********  D A T A ***********/
+
+function anobissexto (ano) { 
+	if (((ano % 4)==0) && ((ano % 100)!=0) || ((ano % 400)==0)) { 
+		return (true);
+	} else 
+	{ return (false) 
+	}
+}
+
+
+function maiorData(data1, data2){
+	var d1 = data1.split('/');
+	var d2 = data2.split('/');
+ 
+	var d1 = new Date(d1[2],d1[1]-1,d1[0]);
+	var d2 = new Date(d2[2],d2[1]-1,d2[0]);
+	return (d1>d2?data1:data2);
+}
+
+function valida_data(form,objeto,valor){
+	
+	var mNomes = "JanFebMarAprMayJunJulAugSepOctNovDec"
+	var mValores = "312831303130313130313031"
+	var alertMsg = ""
+	var forFocus = form+"."+objeto+".focus()"
+	var erro = true
+	var args = valida_data.arguments
+
+    dia   	= parseInt(valor.substring(0,2),10)		// pega o dia
+	mes   	= parseInt(valor.substring(3,5),10)  	// pega o mês
+	ano   	= parseInt(valor.substring(6,10),10)	// pega o ano
+ 
+	objeto = args[1]		// nome do objeto
+	valor  = args[2]		// valor do campo
+
+	var lastDate = 0
+
+	if (mes == 2){
+		if (anobissexto(ano)) {
+			lastDate = 29
+		}
+		else{
+			lastDate = 28
+		}
+	} 
+	else {
+		lastDate = mValores.substring((mes-1)*2, (mes-1)*2+2)
+	}
+
+
+	if (valor.length<10){
+		eval(forFocus)
+		return false
+	}
+ 
+	else if ( (valor.substring(2,3) != "/" ) || (valor.substring(5,6) != "/") ) {
+		eval(forFocus)
+		return false
+	}
+	
+	// Se o ano for menor que 1890, critica...
+	else if (ano < 1890){
+		eval(forFocus)
+		return false
+	}
+
+	else if ( (isNaN(dia)) || (isNaN(mes)) || ( isNaN(ano)) ){
+		eval(forFocus)
+		return false
+	}
+
+	else if ( (mes > 12) || (mes <= 0) ){
+		eval(forFocus)
+		return false
+	}
+
+
+   else if ( (dia > lastDate) || (dia <=0) ){
+		eval(forFocus)
+		return false
+	}
+
+	else {
+      var newValue = ""
+	if (dia<10){
+		dia = "0"+dia
+	}
+	if (mes<10){
+		mes = "0"+mes
+	}
+	return true}
+}
+
+
+/**************** S T R I N G **********************/
+
+function verifica_acento(campo, tamanho) {
+   var letras=false;
+   var vetor=new Array("á", "Á", "à", "À", "ã", "Ã", "â", "Â", "ä", "Ä", "é", "É", "è", "È", "ê", "Ê", "ë", "Ë", "í", "Í", "ì", "Ì", "î", "Î", "ï", "Ï", "ó", "Ó", "ò", "Ò", "ô", "Ô", "ö", "Ö", "õ", "Õ", "ú", "Ú", "ù", "Ù", "ü", "Ü","û", "Û", "^", "`", "'", "~");
+   var temp;
+   for(i=0;i<tamanho;i++) {
+      temp=campo.substring(i,i+1);
+      for (x=0;x<100;x++) {
+          if (vetor[x]==temp) {
+             letras=true;}
+          else {}
+      }
+   }
+	if (letras==true) {
+       return true}
+    else {
+       return false;}
+}
+	
+	
+/* Verifica se word é uma entrada em branco */
+   function verifica_branco(parametro)   // FUNCAO PARA VERIFICAÇÃO DE CAMPOS NÃO PREENCHIDOS
+                                         // OU PREENCHIDOS APENAS COM ESPAÇOS EM BRANCO
+   {
+     teste_parametro = "false"; //variavel para teste de espacos em branco
+     tamanho_parametro = parametro.length;
+     if (tamanho_parametro != 0){
+        for (i = 0; i < tamanho_parametro; i++){
+            if (parametro.charAt(i) != " "){
+                teste_parametro = "true"; /*existe caracter diferente de branco*/
+            }
+        }
+        
+        if (teste_parametro == "false"){  //todos os caracteres digitados são brancos
+           return false;
+        }
+        else
+        {
+           return true;
+        }
+     }
+     else
+     {
+         return false;
+     }
+   }
+	
+
+function formatonulo (campo) {
+  for (contador=0; contador < campo.length; contador++) {
+      retorno = campo.substring (contador, contador+1);
+      if (retorno!=' ') return (false);
+  }
+  return (true);
+}
+
+
+function completa_zeros(iValor, iTamanho) {
+
+   if (iValor.length < iTamanho) {
+   
+      for (contador = 1; iTamanho - iValor.length; contador++) {
+          iValor = "0" + iValor;
+      }    
+   }
+   else if(iValor.length > iTamanho) {
+      if (iValor.substring(1, 2) == "0") 
+         iValor = iValor.substring(1, iValor.length);
+      else {
+         iValor = iValor.substring(1, iValor.length-1);
+      }   
+   }
+   
+   return(iValor);
+}
+
+
+/***************** N U M E R O ***********************/
+
+function formatointeiro (numero) {
+
+    for (i=0; i<numero.length; i++) {
+     
+      if (((parseInt(numero.substring(i, i+1), 10)>=0)
+           && (parseInt(numero.substring(i, i+1), 10)<=9))) {
+      }
+      else
+        return (false);
+    } /* fecha for */
+    if (parseInt(numero)>=0)
+      return (true);
+    else
+      return (false);
+  }
+
+
+function formatodecimal (numero) {
+    num_pontos=0;
+
+    for (i=0; i<numero.length; i++) {
+        if (numero.substring(i, i+1)=="."){ 
+           return(false);
+        }
+        else {
+             if (((parseInt(numero.substring(i, i+1), 10)>=0)
+                && (parseInt(numero.substring(i, i+1), 10)<=9))
+                || (numero.substring(i, i+1)==",")) {
+                if (numero.substring(i, i+1)==",")
+                  num_pontos++;
+       }
+       else
+         return (false);
+       } /* fecha if */
+    } /* fecha for */
+    if (num_pontos>1)
+       return (false);
+
+    if (parseFloat(numero)>=0.00)
+       return (true);
+    else
+       return (false);
+}
+
+
+/**************** O U T R O S *******************/
+
+function EmailCorreto (conteudo) {
+
+  Valor = false
+
+  if ( conteudo.indexOf(".@") > -1 )	
+  {
+	return false ;	
+  }
+  
+  if ( conteudo.indexOf("@.") > -1 )	
+  {
+	return false ;	
+  }
+
+  if ( conteudo.indexOf(";") > -1 )	
+  {
+	return false ;	
+  }
+  
+  if ( conteudo.indexOf("www") > -1 )	
+  {
+	return false ;	
+  }
+
+  if ( conteudo.indexOf(" ") > -1 )	
+  {
+	return false ;	
+  }
+
+  if ( conteudo.substr(conteudo.length-1,1) == "." )
+  {
+	return false ;	
+  }
+
+  for (Count=0; Count<conteudo.length; Count++) {
+      ch = conteudo.substring (Count, Count+1);
+	   if ((conteudo.length - (Count+1)) >0 ){
+		    if (ch=='@') {
+				// Se existe outro @ no mesmo endereço de email, retorna falso
+				if ( Valor ) 	
+					return (false);
+				else
+					Valor = true;
+
+			}
+		
+			if(!((ch.charCodeAt(0)>=65 && ch.charCodeAt(0)<=90) || (ch.charCodeAt(0)>=97 && ch.charCodeAt(0)<=122)  || (ch.charCodeAt(0)>=48 && ch.charCodeAt(0)<=57) || ch.charCodeAt(0)==46 || ch.charCodeAt(0)==64  
+			|| ch.charCodeAt(0)==95  || ch.charCodeAt(0)==45)){
+				return false;
+			}
+		}
+		
+  } // Fim for
+
+  return (Valor);
+}
+
+
+
+function Valida_PISPASEP(iValor)
+{
+   var iCont1,iSoma=0,iMult,iLimiteMult,iResto,iDV
+   
+   iResto = 0 
+   iLimiteMult = 9 
+   iSoma = 0
+   iMult = 2
+
+      for (iCont1 = 10; iCont1>0; iCont1--)
+
+      {
+         iSoma = iSoma + (iMult * (iValor.substring(iCont1-1,iCont1)))
+
+         iMult++
+         if (iMult > iLimiteMult)
+            iMult = 2
+      }
+
+      iResto = (iSoma % 11)
+      iDV = (11 - parseInt(iResto))
+      
+      if (iDV > 9) return(0); else return(iDV);
+}
+
+
+
+function fVerificaCPFCGC(txtcpfcgc)
+{
+	sDigito = txtcpfcgc.substring(txtcpfcgc.length,txtcpfcgc.length-2)
+	sNumero = txtcpfcgc.substring(0,txtcpfcgc.length-2)
+	
+	sCpf = sCalculaDigitoMod11(sNumero,2,1)
+	sCgc = sCalculaDigitoMod11(sNumero,2,2)
+	
+	if (sDigito == sCpf)
+	{
+		return("1" + txtcpfcgc)
+	}
+	
+	else
+	{
+		if (sDigito == sCgc)
+		{
+			return("2" + txtcpfcgc)
+		}
+		
+		else
+		{
+			return("0" + txtcpfcgc)
+		}	
+	}	
+}
+
+
+function fSoCaracter(_string,carac)
+{
+for(i=0;i<_string.length;i++)
+{
+	if(_string.charAt(i)!=carac)
+		return false;	
+}
+return true;
+}
+
+
+function sCalculaDigitoMod11(sValor,iDigSaida,sTipoValidacao)
+{
+  if (sTipoValidacao == 1) iCod = 12  
+  if (sTipoValidacao == 2) iCod = 9   
+
+  for (t=1;t<=iDigSaida;t++)
+    {
+      soma = 0
+      mult = 2
+      for (j=sValor.length;j>0;j--)
+      {
+        soma = soma + (mult * parseInt(sValor.substring(j,j-1),10))
+        mult++
+        if (mult > iCod) mult = 2
+      }
+      soma = (soma * 10) % 11
+      if (soma == 10) sValor = sValor + "0"
+      else sValor = sValor + soma
+    }
+  	return sValor.substring(sValor.length-iDigSaida,sValor.length)
+}
+
+
+function fValidaDV(iValor,sTipoValidacao)
+{
+   var iCont1,iCont2,iSoma=0,iMult,iLimiteMult
+   if (sTipoValidacao==1) iLimiteMult = 12
+   if (sTipoValidacao==2) iLimiteMult = 9
+   for (iCont1 = 1; iCont1<=2; iCont1++)
+   {
+      iSoma = 0
+      iMult = 2
+      for (iCont2 = iValor.length; iCont2>=1; iCont2--)
+      {
+         iSoma = iSoma + (iMult * (iValor.substring(iCont2-1,iCont2)*1))
+         iMult++
+         if (iMult > iLimiteMult)
+            iMult = 2
+      }
+      iValor = iValor + (((iSoma * 10) % 11) % 10)
+   }
+
+   return(iValor.substring(iValor.length-2,iValor.length))
+}
+
+
+  function IsNumeric(Valor)
+   {
+     var i;
+ 
+     for   (i = 0; i < Valor.length; i++)
+      {
+        if (Valor.charAt(i) < "0" || Valor.charAt(i) > "9")
+         {
+          return false;
+         }
+      }
+     return true;
+   }
+
+function validaNome (string){
+		var branco = 0;
+		var carac;
+		var pos_espaco;
+		var incio;
+		var fim = string;
+		
+		while (fim.indexOf(" ") !=  -1 ){
+			pos_espaco = fim.indexOf(" ");
+			inicio = fim.substring(0,pos_espaco);
+			fim  = fim.substring(pos_espaco+1, fim.length);
+		
+	
+			if (inicio.length > 20){
+				return false; 
+			}
+			
+		}
+		
+		if (fim.length > 20){
+				return false;
+		}
+	
+		
+		for (i=0; i<string.length; i++)
+		{
+			carac=string.charAt(i);
+	
+			if ((string.charAt(i)== string.charAt(i-1)) &&(string.charAt(i-1)== string.charAt(i-2))){
+				return false;
+			}	
+	
+			if (carac == " "){
+				branco = 1	
+			}
+		}
+		if (branco == 0){
+			return false;
+		}
+		return true;
+	}
+
+
+function validaString (string){
+		var valido="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUWVXYZçÇáÁéÉíÍóÓôÔâÂúÚãÃõÕêÊüÜ ";
+		var carac;
+		
+		for (i=0; i< string.length; i++)
+		{
+			carac= string.charAt(i);
+			
+			if (valido.indexOf(carac)< 0){
+				return false;
+			
+			}
+		}
+		return true;
+	}
+
+
+// --></script>
+<script language="javascript" type="text/javascript" src="quina_resultado_arquivos/funcoes_loterias.js"></script>
+
+<div id="menu_receba_resultados" class="link_azul">
+	<h6>Receba o resultado das loterias em seu email</h6>
+	
+	<a href="#busca" accesskey="P" title="Acessibilidade:BUSCA"></a>
+	<form name="frmEmail" method="get" id="frmEmail" action="http://www1.caixa.gov.br/push/push.asp">
+		<label for="c_email">Seu e-mail:</label>
+		<input name="c_email" id="c_email" class="campo_email" value=" " type="text">
+		<a class="btn_cadastrarEmail" href="#" onclick="mandaEmail('resp','c_email','frmEmail');" onkeypress="mandaEmail('resp','c_email','frmEmail');" title="Clique e se cadastre">Clique e se cadastre</a>
+	</form>
+	
+	<div id="resp"></div>
+	
+	<ul>
+		<li><a href="https://www1.caixa.gov.br/push/push.asp" title="Desejo me cadastrar">Desejo me cadastrar</a></li>
+		<li><a href="https://www1.caixa.gov.br/push/push.asp" title="Quero cancelar meu cadastro">Quero cancelar meu cadastro</a></li>
+	</ul>
+</div>
+
+					
+			<!-- [ FINAL ] RECEBA O RESULTADO DAS LOTERIAS NO SEU E-MAIL -->
+			
+			<!-- [ INÍCIO ] RSS -->
+			<div id="destaque_rss">
+				
+				
+				<h4>Receba em RSS</h4>
+				<p>Acesse os resultados das Loterias da CAIXA no seu agregador de RSS.</p>
+<p>&nbsp;</p><a href="http://www1.caixa.gov.br/rss/index.asp">Saiba mais</a> 
+			</div>
+			<!-- [ FINAL ] RSS -->
+			
+			<!-- [ INÍCIO ] ATALHOS DOS JOGOS -->
+			
+					
+<div id="atalho_jogos" style="height: auto;">
+	<div id="coluna_esquerda_jogos" style="height: auto;">
+		
+			<a class="atalho_megasena" href="http://www1.caixa.gov.br/loterias/loterias/megasena/megasena_resultado.asp" title="Acesse por aqui os resultados da Megasena">Acesse por aqui os resultados da Megasena</a>
+		
+			<a class="atalho_lotomania" href="http://www1.caixa.gov.br/loterias/loterias/lotomania/lotomania_resultado.asp" title="Acesse por aqui os resultados da Lotomania">Acesse por aqui os resultados da Lotomania</a>
+		
+			<a class="atalho_federal" href="http://www1.caixa.gov.br/loterias/loterias/federal/federal_resultado.asp" title="Acesse por aqui os resultados da Loteria Federal">Acesse por aqui os resultados da Loteria Federal</a>
+		
+			<a class="atalho_loteca" href="http://www1.caixa.gov.br/loterias/loterias/loteca/loteca_resultado.asp" title="Acesse por aqui os resultados da Loteca">Acesse por aqui os resultados da Loteca</a>
+		
+				<a class="atalho_timemania" href="http://www1.caixa.gov.br/loterias/loterias/timemania/timemania_resultado.asp" title="Acesse por aqui os resultados da Timemania">Acesse por aqui os resultados da Timemania</a>
+			
+	</div>
+
+	<div id="coluna_direita_jogos" style="height: auto;">
+		
+			<a class="atalho_lotofacil" href="http://www1.caixa.gov.br/loterias/loterias/lotofacil/lotofacil_resultado.asp" title="Acesse por aqui os resultados da Lotofacil">Acesse por aqui os resultados da Lotofacil</a>
+		
+			<a class="atalho_duplasena" href="http://www1.caixa.gov.br/loterias/loterias/duplasena/duplasena_resultado.asp" title="Acesse por aqui os resultados da Duplasena">Acesse por aqui os resultados da Duplasena</a>
+		
+			<a class="atalho_loteriaInst" href="http://www1.caixa.gov.br/loterias/loterias/loteriainst/como_jogar.asp" title="Acesse por aqui as maneiras de como jogar na Loteria Instantânea">Acesse por aqui as maneiras de como jogar na Loteria Instantânea</a>
+		
+			<a class="atalho_lotogol" href="http://www1.caixa.gov.br/loterias/loterias/lotogol/lotogol_resultado.asp" title="Acesse por aqui os resultados da Lotogol">Acesse por aqui os resultados da Lotogol</a>
+		
+	</div>
+</div>
+					
+			<!-- [ FINAL ] ATALHOS DOS JOGOS -->
+			
+			<!-- [ INÍCIO ] DESTAQUE PUBLICITÁRIO -->
+			
+			
+			<div id="destaque_publicitario">
+				<object type="application/x-shockwave-flash" data="quina_resultado_arquivos/raiz_011.swf" title="CAIXA" height="253" width="186"><param name="wmode" value="transparent"><param name="movie" value="/loterias/resources/raiz_011.swf"></object>
+			 </div>
+			<!-- [ FINAL ] DESTAQUE PUBLICITÁRIO -->
+			
+			<!-- [ INÍCIO ] COMUNICADOS IMPORTANTES -->
+			
+						
+
+
+	<!--include virtual="/_newincludes/funcoes_placeholder.asp"-->
+	
+
+<!--	Include Comunicados Importantes  
+		com CSS no loterias.css				-->
+	<div id="comunicados_importantes">
+		<div id="link_comunidado" class="link_azulnegrito">
+			<a href="http://www1.caixa.gov.br/loterias/comunicados_importantes.asp">Comunicados importantes das Loterias da Caixa</a>
+		</div>
+	</div>
+<!--	Fim Include Comunicados Importantes		-->
+
+
+						
+			<!-- [ FINAL ] COMUNICADOS IMPORTANTES -->
+			
+			<!-- [ INÍCIO ] ENCONTRE FÁCIL -->
+			
+					<script language="javascript" type="text/javascript" src="quina_resultado_arquivos/inc_pesquisa.js"></script>
+<form name="frmPortal" id="frmPortal" method="post" action="http://www1.caixa.gov.br/loterias/loterias/rede_casas_lotericas.asp">
+	<div id="pesquisa">
+		<div id="descricao_pesquisa">
+			<p>Encontre a Lotérica mais perto de você:</p>
+		</div>
+		<input name="nomecidadade" id="nomecidadade" value="0" type="hidden">
+		<div id="campo_estado">
+			<label for="uf">Estado</label><br>
+			<select name="v_uf" id="uf" onchange="mostraCarrega1('block');pesquisa_casa_loterica('/loterias/_includes/busca_casas_lotericas.asp?uf='+ this.value, 'no_municipio');">
+				<option selected="selected" value=""></option>
+				<option value="AC">AC</option>
+				<option value="AL">AL</option>
+				<option value="AP">AP</option>
+				<option value="AM">AM</option>
+				<option value="BA">BA</option>
+				<option value="CE">CE</option>
+				<option value="DF">DF</option>
+				<option value="ES">ES</option>
+				<option value="GO">GO</option>
+				<option value="MA">MA</option>
+				<option value="MT">MT</option>
+				<option value="MS">MS</option>
+				<option value="MG">MG</option>
+				<option value="PA">PA</option>
+				<option value="PB">PB</option>
+				<option value="PR">PR</option>
+				<option value="PE">PE</option>
+				<option value="PI">PI</option>
+				<option value="RJ">RJ</option>
+				<option value="RN">RN</option>
+				<option value="RS">RS</option>
+				<option value="RO">RO</option>
+				<option value="RR">RR</option>
+				<option value="SC">SC</option>
+				<option value="SP">SP</option>
+				<option value="SE">SE</option>
+				<option value="TO">TO</option>
+			</select>
+		</div>
+		<div id="campo_cidade">
+			<label for="no_municipio">Cidade</label><br>
+			<select name="v_municipio" id="no_municipio" onchange="mostraCarrega1('block');pesquisa_casa_loterica('/loterias/_includes/busca_casas_lotericas.asp?uf='+document.getElementById('uf').value+'&amp;municipio='+this.value, 'no_bairro');setanomecidade(this.options[this.selectedIndex].text);" style="width:111px; ">
+				<option selected="selected" value=""></option>
+			</select>
+		</div>
+		<div id="campo_bairro">
+			<label for="no_bairro">Bairro</label><br>
+			<select id="no_bairro" name="v_bairro" onkeypress="enter(event);" style="width:163px;">
+				<option selected="selected" value=""></option>
+			</select>
+		</div>
+		<!-- inicio área obrigatória para usar a troca de msg entre servidores-->
+		
+		<div id="carregando">
+			<img src="quina_resultado_arquivos/ampulheta_2.gif" alt="carregando...">
+		</div>
+		
+		<div id="botao_procurar">
+			<a class="btn_procuraLoterica" href="#" onclick="Pesquisa();return false;" onkeypress="Pesquisa(); return false;" title="Clique e procure uma lotérica por aqui">Clique e procure uma lotérica por aqui.</a>
+		</div>
+		<!-- fim área obrigatória para usar a troca de msg entre servidores-->
+	</div>
+</form>
+<!-- inicio área de troca de msg do iframe-->
+<span id="spanAjax">
+	<!--iframe id="iframeAjax" name="iframeAjax" style="display:block"></iframe-->
+</span>
+<label for="bufferarea" style="display:none">bufferarea</label>
+<textarea rows="30" cols="80" id="bufferarea" name="bufferarea" style="display:none"> </textarea>
+<!-- fim área de troca de msg do iframe-->
+
+					
+			<!-- [ FIM ] ENCONTRE FÁCIL -->
+			
+			<!-- [ INÍCIO ] DESTAQUE SITE ESPECIAL -->
+			
+					
+
+
+
+	<!--include virtual="/_newincludes/funcoes_placeholder.asp"-->
+	
+
+<!--	Include Destaque Especial 
+		com CSS no loterias.css				-->
+	<div id="destaque_site_especial">
+		<br><a title="Seja um EmpresÃfÂ¡rio LotÃfÂ©rico" href="http://www1.caixa.gov.br/loterias/seja_empresario_loterico/index.asp"><img src="quina_resultado_arquivos/ban_seja_empresarioloterico.jpg" border="0"></a><img src="quina_resultado_arquivos/btn_siteespecial.jpg" border="0"> 
+	</div>
+<!--	Fim Include Destaque Especial 	-->
+
+
+					
+			<!-- [ FINAL ] DESTAQUE SITE ESPECIAL -->
+		</div>
+		<!-- [ FINAL ] COLUNA DIREITA -->
+		
+	</div>
+
+
+
+	<div id="rodape_geral">
+	
+
+
+	<meta name="ROBOTS" content="FOLLOW,INDEX">
+
+
+
+
+<div id="rodape_2011_container">
+<div id="rodape_2011_content" class="clear_fix">
+	<div id="rodape_links">
+<ul>
+<li>
+<h3 class="sobre_a_caixa" title="Sobre a CAIXA">Sobre a CAIXA</h3>
+<ul>
+<li><a title="Acesso à Informação" href="http://www.caixa.gov.br/acessoainformacao">Acesso à Informação</a> 
+</li><li><a title="Apresentação" href="http://www14.caixa.gov.br/portal/public/acaixa/home">Apresentação</a> 
+</li><li><a title="Balanços e Demonstrativos" href="http://www14.caixa.gov.br/portal/public/acaixa/home/informacoes_financeiras/balancos_demonstrativos">Balanços e Demonstrativos</a> 
+</li><li><a title="Portal de Compras" href="http://www.caixa.gov.br/compras_caixa/">Compras CAIXA</a> 
+</li><li><a title="Parcerias" href="http://www14.caixa.gov.br/portal/public/acaixa/home/fornecedores/parcerias_tecnicas">Parcerias</a> 
+</li><li><a title="Presidência e Vice-Presidência" href="http://www14.caixa.gov.br/portal/public/governanca/home/orgaos_da_administracao/diretoria/integrantes-diretoria">Presidência e Vice-Presidência</a> 
+</li><li><a title="Processos de Contas Anuais" href="http://www14.caixa.gov.br/portal/public/acaixa/home/informacoes_financeiras/balancos_demonstrativos/processos-conta-anuais">Processos de Contas Anuais</a> 
+</li><li><a href="http://www.caixa.gov.br/voce/relacao_investidores.asp">Relação com Investidores</a>&nbsp; 
+</li><li><a title="Sustentabilidade CAIXA" href="http://www12.caixa.gov.br/portal/public/rse">Sustentabilidade CAIXA</a> 
+</li><li><a title="Trabalhar na CAIXA" href="http://www14.caixa.gov.br/portal/public/acaixa/home/trabalhe_caixa/">Trabalhar na CAIXA</a> </li></ul>
+</li><li>
+<h3 class="servicos_sociais" title="Serviços Sociais">Serviços Sociais</h3>
+<ul>
+<li><a title="Benefícios Sociais" href="http://www.caixa.gov.br/voce/social/beneficios/index.asp">Benefícios Sociais</a> 
+</li><li><a title="Cadastros e Cartões" href="http://www.caixa.gov.br/voce/social/cadastro/index.asp">Cadastros e Cartões</a> 
+</li><li><a title="Contribuição Social" href="http://www.caixa.gov.br/voce/contribuicao_sindical/index.asp">Contribuição Social</a> 
+</li><li><a title="FGTS" href="http://www.caixa.gov.br/fgts/index.asp">FGTS</a> 
+</li><li><a title="FIES" href="http://www.caixa.gov.br/voce/Fies/">FIES</a> 
+</li><li><a title="Promoções Comerciais" href="http://www.caixa.gov.br/pj/pj_comercial/mp/promocoes_comerciais/index.asp">Promoções Comerciais</a> 
+</li><li><a title="Transferência de Renda" href="http://www.caixa.gov.br/voce/social/transferencia/index.asp">Transferência de Renda</a> </li></ul>
+</li><li>
+<h3 class="fale_conosco" title="Fale Conosco">Fale Conosco</h3>
+<ul>
+<li><a title="Atendimento Comercial" href="http://www1.caixa.gov.br/atendimento/telefones_da_caixa.asp">Atendimento Comercial</a> 
+</li><li><strong><a title="CAIXA Cidadão" href="http://www1.caixa.gov.br/atendimento/index.asp">CAIXA Cidadão - 0800 726 0207</a></strong> 
+</li><li><a title="Central de negociações de dívidas" href="http://www1.caixa.gov.br/atendimento/telefones_da_caixa.asp">Central de negociações de dívidas</a> 
+</li><li><a title="Deficiente auditivo" href="http://www1.caixa.gov.br/atendimento/telefones_da_caixa.asp">Deficiente auditivo</a> 
+</li><li><a title="Ouvidoria CAIXA" href="http://www1.caixa.gov.br/ouvidoria/index.asp">Ouvidoria CAIXA</a> 
+</li><li><strong><a title="SAC CAIXA" href="http://www1.caixa.gov.br/atendimento/telefones_da_caixa.asp">SAC CAIXA | 0800 726 0101</a></strong> <!--<li><a 
+href="http://www1.caixa.gov.br/atendimento/telefones_da_caixa.asp" 
+title="Atendimento Cartões CAIXA">Atendimento Cartões 
+CAIXA</a></li>-->
+</li><li><a title="Suporte tecnológico" href="http://www1.caixa.gov.br/atendimento/telefones_da_caixa.asp">Suporte tecnológico</a> </li></ul>
+</li><li class="caixa_nas_redes">
+<h3 class="caixa_nas_redes" title="CAIXA nas Redes">CAIXA nas Redes</h3>
+<ul>
+<li><a class="link_orkut" title="Orkut" href="http://www.orkut.com.br/Main#Profile?uid=15621808132026355610">Orkut</a> 
+</li><li><a class="link_twitter" title="Twitter" href="http://twitter.com/caixa">Twitter</a> 
+</li><li><a class="link_facebook" title="Facebook" href="http://www.facebook.com/caixa">Facebook</a> 
+</li><li><a class="link_youtube" title="YouTube" href="http://www.youtube.com/canalcaixa">YouTube</a> </li></ul></li></ul></div>
+<div id="rodape_banner">
+<div style="FLOAT: right"><a href="http://www14.caixa.gov.br/acessoinformacao"><img src="quina_resultado_arquivos/BNR_acesso_informacao_120x60cinza.gif" border="0"></a></div></div>
+</div>
+</div>
+<div id="ferramentas_2011_container">
+<div id="ferramentas_2011_content">
+<div id="rodape_ferramentas">
+	<ul class="idiomas">
+<li><img src="quina_resultado_arquivos/IMG_bandeira_inglaterra.png"><a title="English" style="MARGIN-LEFT: 3px; POSITION: relative; TOP: -2px" href="http://www1.caixa.gov.br/idiomas/ingles/index.asp">English</a> 
+</li><li><img src="quina_resultado_arquivos/IMG_bandeira_espanha.png"><a title="Español" style="MARGIN-LEFT: 3px; POSITION: relative; TOP: -2px" href="http://www1.caixa.gov.br/idiomas/espanhol/index.asp">Español</a> 
+</li><li class="ultimo_item"><img src="quina_resultado_arquivos/IMG_bandeira_japao.png"><a style="MARGIN-LEFT: 3px; POSITION: relative; TOP: -2px" href="http://www1.caixa.gov.br/voce/japones.asp">&#26085;&#26412;&#35486;</a>&nbsp;</li></ul>
+<ul class="ferramentas">
+<li><a title="Política de Privacidade" href="http://www.caixa.gov.br/seguranca/politica_privacidade.asp">Política de Privacidade</a> 
+</li><li><a title="Termos de Uso" href="http://www.caixa.gov.br/seguranca/termos_de_uso.asp">Termos de Uso</a> 
+</li><li><a title="Mapa do Site" href="http://www.caixa.gov.br/mapa/index.asp">Mapa do Site</a> 
+</li><li><a title="Segurança" href="http://www.caixa.gov.br/seguranca/index.asp">Segurança</a> 
+</li><li><a title="Imprensa" href="http://www1.caixa.gov.br/imprensa/index.asp">Imprensa</a> 
+</li><li class="link_rss"><a title="RSS" href="http://www1.caixa.gov.br//rss/index.asp">RSS</a> </li></ul>
+</div>
+</div>
+</div>
+
+<!-- xxx Área de controle do site xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+
+
+</div>
+	
+
+<!-- INCLUDE DO DESIGN PALETTE [GERENCIADOR] -->
+
+
+<script type="text/javascript">
+
+	carrega_concurso();
+
+mostra_sorteio();
+	
+</script>
+<noscript></noscript>
+
+
+
+
+
+</body><!-- Gerada em: 13/11/2012 18:31:13 --></html>
