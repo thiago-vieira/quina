@@ -27,9 +27,10 @@
     <%= f.fields_for :jogos do |jogo| %>
       <%= jogo.fields_for :numeros do |numero| %>
         <%= numero.text_field "numero", size:1, maxlength:2 %>
-      <% end %>
+      <% end %>  <%= link_to "Adicionar número" %>
       <hr/>
     <% end %>
+    <%= link_to "Adicionar jogo" %>
   </div>
   <div class="actions">
     <%= f.submit %>

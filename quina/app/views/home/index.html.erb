@@ -1,35 +1,40 @@
 <%= form_tag 'resultado' do %>
   <h1>Jogou na Quina? Deixe que eu vejo se você ganhou!</h1>
   <p>Último concurso: <%= @ultimo_concurso %></p>
-  <p>Concurso inicial: <%= text_field_tag :concurso_inicio, session[:concurso_inicio] %> Concurso final: <%= text_field_tag :concurso_fim, session[:concurso_fim] %></p>
+  <p>
+    Concurso inicial: <%= text_field_tag :concurso_inicio, session[:concurso_inicio], size:4, maxlength:5 %>
+  </p>
+  <p>
+    Concurso final: <%= text_field_tag :concurso_fim, session[:concurso_fim], size:4, maxlength:5 %>
+  </p>
 
   <p>Jogo:
-   <%= text_field_tag :na1, session["na1"] %>
-   <%= text_field_tag :na2, session["na2"] %>
-   <%= text_field_tag :na3, session["na3"] %>
-   <%= text_field_tag :na4, session["na4"] %>
-   <%= text_field_tag :na5, session["na5"] %>
+   <%= text_field_tag :na1, session["na1"], size:1, maxlength:2 %>
+   <%= text_field_tag :na2, session["na2"], size:1, maxlength:2 %>
+   <%= text_field_tag :na3, session["na3"], size:1, maxlength:2 %>
+   <%= text_field_tag :na4, session["na4"], size:1, maxlength:2 %>
+   <%= text_field_tag :na5, session["na5"], size:1, maxlength:2 %>
   </p>
   <p>Jogo:
-   <%= text_field_tag :nb1, session["nb1"] %>
-   <%= text_field_tag :nb2, session["nb2"] %>
-   <%= text_field_tag :nb3, session["nb3"] %>
-   <%= text_field_tag :nb4, session["nb4"] %>
-   <%= text_field_tag :nb5, session["nb5"] %>
+   <%= text_field_tag :nb1, session["nb1"], size:1, maxlength:2 %>
+   <%= text_field_tag :nb2, session["nb2"], size:1, maxlength:2 %>
+   <%= text_field_tag :nb3, session["nb3"], size:1, maxlength:2 %>
+   <%= text_field_tag :nb4, session["nb4"], size:1, maxlength:2 %>
+   <%= text_field_tag :nb5, session["nb5"], size:1, maxlength:2 %>
   </p>
   <p>Jogo:
-   <%= text_field_tag :nc1, session["nc1"] %>
-   <%= text_field_tag :nc2, session["nc2"] %>
-   <%= text_field_tag :nc3, session["nc3"] %>
-   <%= text_field_tag :nc4, session["nc4"] %>
-   <%= text_field_tag :nc5, session["nc5"] %>
+   <%= text_field_tag :nc1, session["nc1"], size:1, maxlength:2 %>
+   <%= text_field_tag :nc2, session["nc2"], size:1, maxlength:2 %>
+   <%= text_field_tag :nc3, session["nc3"], size:1, maxlength:2 %>
+   <%= text_field_tag :nc4, session["nc4"], size:1, maxlength:2 %>
+   <%= text_field_tag :nc5, session["nc5"], size:1, maxlength:2 %>
   </p>
   <p>Jogo:
-   <%= text_field_tag :nd1, session["nd1"] %>
-   <%= text_field_tag :nd2, session["nd2"] %>
-   <%= text_field_tag :nd3, session["nd3"] %>
-   <%= text_field_tag :nd4, session["nd4"] %>
-   <%= text_field_tag :nd5, session["nd5"] %>
+   <%= text_field_tag :nd1, session["nd1"] , size:1, maxlength:2%>
+   <%= text_field_tag :nd2, session["nd2"], size:1, maxlength:2 %>
+   <%= text_field_tag :nd3, session["nd3"], size:1, maxlength:2 %>
+   <%= text_field_tag :nd4, session["nd4"], size:1, maxlength:2 %>
+   <%= text_field_tag :nd5, session["nd5"], size:1, maxlength:2 %>
   </p>
   <%= submit_tag 'Verificar' %> Atenção: a consulta pode demorar!
 <% end %>
