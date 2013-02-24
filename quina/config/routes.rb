@@ -6,6 +6,8 @@ Quina::Application.routes.draw do
   root to:'home#index'
 
   post 'resultado' => 'home#resultado'
+
+  post 'salvar_dados_na_session' => 'home#salvar_dados_na_session'
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

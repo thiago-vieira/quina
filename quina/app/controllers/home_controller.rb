@@ -2,8 +2,13 @@
 class HomeController < ApplicationController
   def index
     agent = Mechanize.new
-    page = agent.get("http://www1.caixa.gov.br/loterias/loterias/quina/quina_pesquisa_new.asp?")
-    @ultimo_concurso = page.search("body").text[0..3].to_i
+    #page = agent.get("http://www1.caixa.gov.br/loterias/loterias/quina/quina_pesquisa_new.asp?")
+    @ultimo_concurso = 'testando' #page.search("body").text[0..3].to_i
+  end
+
+  def salvar_dados_na_session
+    session[params["atributo"]] = params["valor"]
+    render :nothing => true
   end
 
   def resultado
