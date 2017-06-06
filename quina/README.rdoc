@@ -1,1 +1,3 @@
 Verifica se você ganhou na Quina.
+
+Exemplo de como utilizar a gem mechanize para obter dados de sites.
