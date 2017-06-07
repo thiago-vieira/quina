@@ -1,0 +1,38 @@
+<%= form_for(@bilhete) do |f| %>
+  <% if @bilhete.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@bilhete.errors.count, "error") %> prohibited this bilhete from being saved:</h2>
+
+      <ul>
+      <% @bilhete.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field">
+    <%= f.label :concurso_inicial %><br />
+    <%= f.number_field :concurso_inicial %>
+  </div>
+  <div class="field">
+    <%= f.label :concurso_final %><br />
+    <%= f.number_field :concurso_final %>
+  </div>
+  <div class="field">
+    <%= f.label :tipo %><br />
+    <%= f.text_field :tipo %>
+  </div>
+  <div class="field">
+    <%= f.label :jogos %><br/><br/>
+    <%= f.fields_for :jogos do |jogo| %>
+      <%= jogo.fields_for :numeros do |numero| %>
+        <%= numero.text_field "numero", size:1, maxlength:2 %>
+      <% end %>  <%= link_to "Adicionar número" %>
+      <hr/>
+    <% end %>
+    <%= link_to "Adicionar jogo" %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
